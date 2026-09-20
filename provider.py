@@ -36,7 +36,11 @@ def create_m3u(data, filename="stv9.m3u"):
                     if drm_scheme.lower() == "clearkey":
                         f.write("#KODIPROP:inputstream.adaptive.license_type=clearkey\n")
                         if drm_key:
-                            f.write(f"#KODIPROP:inputstream.adaptive.license_key={drm_key}\n")
+                            # If drm_key looks like JSON, keep it as-is
+                            if drm_key.strip().startswith("{"):
+                                f.write(f"#KODIPROP:inputstream.adaptive.license_key={drm_key.strip()}\n")
+                            else:
+                                f.write(f"#KODIPROP:inputstream.adaptive.license_key={drm_key}\n")
 
                 # HLS streams
                 elif ".m3u8" in raw_link:
