@@ -65,6 +65,7 @@ def create_log(data, filename="stv9.log"):
         total_streams = sum(len(ch.get("resolved_streams", [])) for ch in data)
         log.write(f"Total channels: {len(data)}\n")
         log.write(f"Total streams: {total_streams}\n\n")
+
         for ch in data:
             name = ch.get("name") or ch.get("title") or "Unknown Channel"
             log.write(f"Channel: {name}\n")
