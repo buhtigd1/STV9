@@ -19,15 +19,17 @@ def create_m3u(data, filename="stv9.m3u"):
             group = ch.get("group") or ch.get("category") or "Sports"
 
             for stream in ch.get("resolved_streams", []):
-                url = stream.get("link", "")
+                raw_link = stream.get("link", "")
                 api = stream.get("api", "")
                 title = stream.get("title", name)
+                if not raw_link:
+                    continue
 
                 # EXTINF line
                 f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{title}" tvg-logo="{logo}" group-title="{group}",{title}\n')
 
                 # DASH streams
-                if ".mpd" in url:
+                if ".mpd" in raw_link:
                     f.write("#KODIPROP:inputstream=inputstream.adaptive\n")
                     f.write("#KODIPROP:inputstream.adaptive.manifest_type=mpd\n")
                     f.write("#KODIPROP:inputstream.adaptive.license_type=clearkey\n")
@@ -35,14 +37,14 @@ def create_m3u(data, filename="stv9.m3u"):
                         f.write(f"#KODIPROP:inputstream.adaptive.license_key={api}\n")
 
                 # HLS streams
-                elif ".m3u8" in url:
+                elif ".m3u8" in raw_link:
                     f.write("#KODIPROP:inputstream=inputstream.ffmpeg\n")
                     f.write("#KODIPROP:inputstream.adaptive.manifest_type=hls\n")
 
                 # Handle extra headers
-                clean_url = url
-                if "|" in url:
-                    clean_url, headers = url.split("|", 1)
+                url = raw_link
+                if "|" in raw_link:
+                    url, headers = raw_link.split("|", 1)
                     for header in headers.split("&"):
                         if "=" not in header:
                             continue
@@ -55,7 +57,7 @@ def create_m3u(data, filename="stv9.m3u"):
                         elif key == "referer":
                             f.write(f"#EXTVLCOPT:http-referrer={val}\n")
 
-                f.write(f"{clean_url}\n")
+                f.write(f"{url}\n")
 
 def create_log(data, filename="stv9.log"):
     with open(filename, "w", encoding="utf-8") as log:
