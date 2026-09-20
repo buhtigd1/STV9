@@ -2,7 +2,6 @@ import json
 import datetime
 import requests
 
-# URL of the sports channels JSON file
 URL = "https://raw.githubusercontent.com/darkbyteprojects/iptv_png/refs/heads/main/provider_3/sports_channels.json"
 
 def fetch_json(url):
@@ -14,7 +13,6 @@ def create_m3u(data, filename="stv9.m3u"):
     with open(filename, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for ch in data:
-            # Adjust keys based on sports_channels.json structure
             tvg_id = str(ch.get("id", ""))
             name = ch.get("name") or ch.get("title") or "Unknown Channel"
             logo = ch.get("logo") or ch.get("image") or ""
@@ -41,7 +39,7 @@ def create_m3u(data, filename="stv9.m3u"):
                     f.write("#KODIPROP:inputstream=inputstream.ffmpeg\n")
                     f.write("#KODIPROP:inputstream.adaptive.manifest_type=hls\n")
 
-                # Handle extra headers in link (e.g. |User-Agent=..., |Origin=..., |Referer=...)
+                # Handle extra headers
                 clean_url = url
                 if "|" in url:
                     clean_url, headers = url.split("|", 1)
