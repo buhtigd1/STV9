@@ -9,6 +9,21 @@ def fetch_json(url):
     response.raise_for_status()
     return response.json()
 
+def normalize_drm_key(drm_key: str) -> str:
+    """Return drm_key as a single line string suitable for Kodi."""
+    if not drm_key:
+        return ""
+    drm_key = drm_key.strip()
+    if drm_key.startswith("{"):
+        try:
+            # Parse JSON and dump back as compact string
+            parsed = json.loads(drm_key)
+            return json.dumps(parsed, separators=(",", ":"))
+        except Exception:
+            # If parsing fails, just collapse whitespace
+            return " ".join(drm_key.split())
+    return drm_key
+
 def create_m3u(data, filename="stv9.m3u"):
     with open(filename, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
@@ -36,11 +51,7 @@ def create_m3u(data, filename="stv9.m3u"):
                     if drm_scheme.lower() == "clearkey":
                         f.write("#KODIPROP:inputstream.adaptive.license_type=clearkey\n")
                         if drm_key:
-                            # If drm_key looks like JSON, keep it as-is
-                            if drm_key.strip().startswith("{"):
-                                f.write(f"#KODIPROP:inputstream.adaptive.license_key={drm_key.strip()}\n")
-                            else:
-                                f.write(f"#KODIPROP:inputstream.adaptive.license_key={drm_key}\n")
+                            f.write(f"#KODIPROP:inputstream.adaptive.license_key={normalize_drm_key(drm_key)}\n")
 
                 # HLS streams
                 elif ".m3u8" in raw_link:
@@ -79,7 +90,7 @@ def create_log(data, filename="stv9.log"):
                 title = stream.get("name", "")
                 url = stream.get("link", "")
                 drm_key = stream.get("drm_key", "")
-                log.write(f"  {title} -> {url} | drm_key={drm_key}\n")
+                log.write(f"  {title} -> {url} | drm_key={normalize_drm_key(drm_key)}\n")
             log.write("\n")
 
 def main():
