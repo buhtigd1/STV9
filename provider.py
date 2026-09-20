@@ -14,14 +14,15 @@ def create_m3u(data, filename="stv9.m3u"):
         f.write("#EXTM3U\n")
         for ch in data:
             tvg_id = str(ch.get("id", ""))
-            name = ch.get("name") or ch.get("title") or "Unknown Channel"
-            logo = ch.get("logo") or ch.get("image") or ""
-            group = ch.get("group") or ch.get("category") or "Sports"
+            name = ch.get("name", "Unknown Channel")
+            logo = ch.get("logo", "")
+            group = ch.get("group", "Sports")
 
-            for stream in ch.get("resolved_streams", []):
+            for stream in ch.get("streams", []):
                 raw_link = stream.get("link", "")
-                api = stream.get("api", "")
-                title = stream.get("title", name)
+                drm_key = stream.get("drm_key", "")
+                drm_scheme = stream.get("drm_scheme", "")
+                title = stream.get("name", name)
                 if not raw_link:
                     continue
 
@@ -32,9 +33,10 @@ def create_m3u(data, filename="stv9.m3u"):
                 if ".mpd" in raw_link:
                     f.write("#KODIPROP:inputstream=inputstream.adaptive\n")
                     f.write("#KODIPROP:inputstream.adaptive.manifest_type=mpd\n")
-                    f.write("#KODIPROP:inputstream.adaptive.license_type=clearkey\n")
-                    if api:
-                        f.write(f"#KODIPROP:inputstream.adaptive.license_key={api}\n")
+                    if drm_scheme.lower() == "clearkey":
+                        f.write("#KODIPROP:inputstream.adaptive.license_type=clearkey\n")
+                        if drm_key:
+                            f.write(f"#KODIPROP:inputstream.adaptive.license_key={drm_key}\n")
 
                 # HLS streams
                 elif ".m3u8" in raw_link:
@@ -62,18 +64,18 @@ def create_m3u(data, filename="stv9.m3u"):
 def create_log(data, filename="stv9.log"):
     with open(filename, "w", encoding="utf-8") as log:
         log.write(f"Generated on: {datetime.datetime.now()}\n")
-        total_streams = sum(len(ch.get("resolved_streams", [])) for ch in data)
+        total_streams = sum(len(ch.get("streams", [])) for ch in data)
         log.write(f"Total channels: {len(data)}\n")
         log.write(f"Total streams: {total_streams}\n\n")
 
         for ch in data:
-            name = ch.get("name") or ch.get("title") or "Unknown Channel"
+            name = ch.get("name", "Unknown Channel")
             log.write(f"Channel: {name}\n")
-            for stream in ch.get("resolved_streams", []):
-                title = stream.get("title", "")
+            for stream in ch.get("streams", []):
+                title = stream.get("name", "")
                 url = stream.get("link", "")
-                api = stream.get("api", "")
-                log.write(f"  {title} -> {url} | license_key={api}\n")
+                drm_key = stream.get("drm_key", "")
+                log.write(f"  {title} -> {url} | drm_key={drm_key}\n")
             log.write("\n")
 
 def main():
