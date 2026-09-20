@@ -12,21 +12,25 @@ def fetch_json(url):
 def create_m3u(data, filename="stv9.m3u"):
     with open(filename, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        for ch in data:
-            tvg_id = str(ch.get("id", ""))
-            name = ch.get("name") or ch.get("title") or "Unknown Channel"
-            logo = ch.get("logo") or ch.get("image") or ""
-            group = ch.get("group") or ch.get("category") or "Sports"
+        for event in data:
+            event_name = event.get("eventInfo", {}).get("eventName", "Unknown Event")
+            event_cat = event.get("eventInfo", {}).get("eventCat", "General")
+            logo = event.get("eventInfo", {}).get("eventLogo", "")
+            tvg_id = str(event.get("id", ""))
 
-            for stream in ch.get("resolved_streams", []):
+            teamA = event.get("eventInfo", {}).get("teamA", "")
+            teamB = event.get("eventInfo", {}).get("teamB", "")
+            match_label = f"{event_name}: {teamA} vs {teamB}" if teamA and teamB else event_name
+
+            for stream in event.get("resolved_streams", []):
+                title = stream.get("title", "Unknown Stream")
                 raw_link = stream.get("link", "")
                 api = stream.get("api", "")
-                title = stream.get("title", name)
                 if not raw_link:
                     continue
 
-                # EXTINF line
-                f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{title}" tvg-logo="{logo}" group-title="{group}",{title}\n')
+                tvg_name = f"{match_label} - {title}"
+                f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_name}" tvg-logo="{logo}" group-title="{event_cat}",{tvg_name}\n')
 
                 # DASH streams
                 if ".mpd" in raw_link:
@@ -62,15 +66,17 @@ def create_m3u(data, filename="stv9.m3u"):
 def create_log(data, filename="stv9.log"):
     with open(filename, "w", encoding="utf-8") as log:
         log.write(f"Generated on: {datetime.datetime.now()}\n")
-        total_streams = sum(len(ch.get("resolved_streams", [])) for ch in data)
-        log.write(f"Total channels: {len(data)}\n")
+        total_streams = sum(len(event.get("resolved_streams", [])) for event in data)
+        log.write(f"Total events: {len(data)}\n")
         log.write(f"Total streams: {total_streams}\n\n")
-
-        for ch in data:
-            name = ch.get("name") or ch.get("title") or "Unknown Channel"
-            log.write(f"Channel: {name}\n")
-            for stream in ch.get("resolved_streams", []):
-                title = stream.get("title", "")
+        for event in data:
+            event_name = event.get("eventInfo", {}).get("eventName", "Unknown Event")
+            teamA = event.get("eventInfo", {}).get("teamA", "")
+            teamB = event.get("eventInfo", {}).get("teamB", "")
+            match_label = f"{event_name}: {teamA} vs {teamB}" if teamA and teamB else event_name
+            log.write(f"Event: {match_label}\n")
+            for stream in event.get("resolved_streams", []):
+                title = stream.get("title", "Unknown Stream")
                 url = stream.get("link", "")
                 api = stream.get("api", "")
                 log.write(f"  {title} -> {url} | license_key={api}\n")
