@@ -28,7 +28,6 @@ def create_m3u(data, filename="stv9.m3u"):
     with open(filename, "w", encoding="utf-8") as f:
         f.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/buhtigd1/EPG3/main/epg.xml.gz"\n')
         for ch in data:
-            tvg_id = str(ch.get("id", ""))
             name = ch.get("name", "Unknown Channel")
             logo = ch.get("logo", "")
             group = ch.get("group", "Sports")
@@ -40,6 +39,9 @@ def create_m3u(data, filename="stv9.m3u"):
                 title = stream.get("name", name)
                 if not raw_link:
                     continue
+
+                # tvg-id now matches tvg-name
+                tvg_id = title
 
                 # EXTINF line
                 f.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{title}" tvg-logo="{logo}" group-title="{group}",{title}\n')
