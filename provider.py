@@ -26,7 +26,7 @@ def normalize_drm_key(drm_key: str) -> str:
 
 def create_m3u(data, filename="stv9.m3u"):
     with open(filename, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
+        f.write('#EXTM3U url-tvg="https://raw.githubusercontent.com/didikc/EPG3/main/epg.xml.gz"\n')
         for ch in data:
             tvg_id = str(ch.get("id", ""))
             name = ch.get("name", "Unknown Channel")
