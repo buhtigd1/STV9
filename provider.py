@@ -1,391 +1,202 @@
-import requests
+import json
 import datetime
+import requests
 
-PLAYLIST_URL = "https://raw.githubusercontent.com/darkbyteprojects/iptv_png/refs/heads/main/provider_3/sports_channels.json"
-
-OUTPUT_M3U = "stv9.m3u"
-OUTPUT_LOG = "stv9.log"
-
-TIMEOUT = 15
+URL = "https://raw.githubusercontent.com/darkbyteprojects/iptv_png/refs/heads/main/provider_3/sports_channels.json"
 
 
-def download_playlist(url):
-
-    r = requests.get(url, timeout=30)
-    r.raise_for_status()
-
-    return r.text
+def fetch_json(url):
+    response = requests.get(url, timeout=30)
+    response.raise_for_status()
+    return response.json()
 
 
-def validate_m3u(content):
+def normalize_clearkey(api_value):
+    """
+    Convert:
+    kid:key
 
-    if not content:
-        raise ValueError("Playlist kosong")
+    menjadi format Kodi:
+    {"keys":[{"kty":"oct","kid":"...","k":"..."}]}
+    jika diperlukan.
+    """
 
-    text = content.strip()
+    if not api_value:
+        return ""
 
-    if (
-        text.startswith("<!DOCTYPE html")
-        or text.startswith("<html")
-    ):
-        raise ValueError(
-            "HTML terdeteksi. Gunakan RAW GitHub URL."
-        )
-
-    if "404: Not Found" in text:
-        raise ValueError(
-            "Playlist tidak ditemukan (404)"
-        )
-
-    lines = text.splitlines()
-
-    if not lines:
-        raise ValueError(
-            "Playlist tidak memiliki isi"
-        )
-
-    first_line = lines[0].strip()
-
-    if not first_line.startswith("#EXTM3U"):
-        raise ValueError(
-            "Header #EXTM3U tidak ditemukan"
-        )
-
-    extinf_count = sum(
-        1
-        for line in lines
-        if line.strip().startswith("#EXTINF")
-    )
-
-    if extinf_count == 0:
-        raise ValueError(
-            "Tidak ditemukan channel (#EXTINF)"
-        )
-
-    return extinf_count
+    return api_value.strip()
 
 
-def extract_real_url(url):
+def validate_data(data):
 
-    return url.split("|", 1)[0].strip()
+    if not isinstance(data, list):
+        raise ValueError("JSON root must be a list")
 
+    for idx, channel in enumerate(data):
 
-def parse_playlist(content):
+        if not isinstance(channel, dict):
+            raise ValueError(f"Channel #{idx} is not an object")
 
-    lines = content.splitlines()
-
-    header = []
-    blocks = []
-    current_block = []
-
-    for line in lines:
-
-        if line.startswith("#EXTM3U"):
-            header.append(line)
-            continue
-
-        if line.strip().startswith("#EXTINF"):
-
-            if current_block:
-                blocks.append(current_block)
-
-            current_block = [line]
-
-        elif current_block:
-
-            current_block.append(line)
-
-    if current_block:
-        blocks.append(current_block)
-
-    return header, blocks
-
-
-def get_channel_name(block):
-
-    for line in block:
-
-        if line.startswith("#EXTINF"):
-
-            if "," in line:
-                return line.split(",", 1)[1].strip()
-
-    return "Unknown"
-
-
-def get_stream_url(block):
-
-    for line in reversed(block):
-
-        line = line.strip()
-
-        if not line:
-            continue
-
-        if line.startswith("#"):
-            continue
-
-        return extract_real_url(line)
-
-    return None
-
-
-def stream_online(url):
-
-    headers = {
-        "User-Agent": "Mozilla/5.0"
-    }
-
-    try:
-
-        try:
-
-            r = requests.head(
-                url,
-                headers=headers,
-                timeout=TIMEOUT,
-                allow_redirects=True
+        if "formats" not in channel:
+            raise ValueError(
+                f"Channel '{channel.get('title', 'unknown')}' has no formats field"
             )
 
-            if r.status_code in (
-                200,
-                206,
-                301,
-                302
-            ):
-                return True
+        if not isinstance(channel["formats"], list):
+            raise ValueError(
+                f"formats of '{channel.get('title')}' must be a list"
+            )
 
-        except Exception:
-            pass
+    return True
 
-        r = requests.get(
-            url,
-            headers=headers,
-            timeout=TIMEOUT,
-            stream=True,
-            allow_redirects=True
+
+def create_m3u(data, filename="stv9.m3u"):
+
+    with open(filename, "w", encoding="utf-8") as f:
+
+        f.write(
+            '#EXTM3U url-tvg="https://raw.githubusercontent.com/buhtigd1/EPG3/main/epg.xml.gz"\n'
         )
 
-        return r.status_code in (
-            200,
-            206
+        for ch in data:
+
+            channel_name = ch.get("title", "Unknown Channel")
+            logo = ch.get("image", "")
+            group = ch.get("cat", "Sports")
+
+            for fmt in ch.get("formats", []):
+
+                title = fmt.get("title", channel_name)
+                link = fmt.get("link", "")
+                api = fmt.get("api", "")
+                stream_type = str(fmt.get("type", ""))
+
+                if not link:
+                    continue
+
+                full_name = f"{channel_name} - {title}"
+
+                f.write(
+                    f'#EXTINF:-1 tvg-id="{full_name}" '
+                    f'tvg-name="{full_name}" '
+                    f'tvg-logo="{logo}" '
+                    f'group-title="{group}",{full_name}\n'
+                )
+
+                # DASH
+                if ".mpd" in link:
+
+                    f.write(
+                        "#KODIPROP:inputstream=inputstream.adaptive\n"
+                    )
+
+                    f.write(
+                        "#KODIPROP:inputstream.adaptive.manifest_type=mpd\n"
+                    )
+
+                    # type 7 biasanya DRM
+                    if api:
+
+                        f.write(
+                            "#KODIPROP:inputstream.adaptive.license_type=clearkey\n"
+                        )
+
+                        f.write(
+                            "#KODIPROP:inputstream.adaptive.license_key="
+                            f"{normalize_clearkey(api)}\n"
+                        )
+
+                # HLS
+                elif ".m3u8" in link:
+
+                    f.write(
+                        "#KODIPROP:inputstream=inputstream.ffmpeg\n"
+                    )
+
+                    f.write(
+                        "#KODIPROP:inputstream.adaptive.manifest_type=hls\n"
+                    )
+
+                url = link
+
+                if "|" in url:
+
+                    url, headers = url.split("|", 1)
+
+                    headers = headers.replace("&amp;", "&")
+
+                    for header in headers.split("&"):
+
+                        if "=" not in header:
+                            continue
+
+                        key, value = header.split("=", 1)
+
+                        key = key.lower()
+
+                        if key == "user-agent":
+                            f.write(
+                                f"#EXTVLCOPT:http-user-agent={value}\n"
+                            )
+
+                        elif key == "referer":
+                            f.write(
+                                f"#EXTVLCOPT:http-referrer={value}\n"
+                            )
+
+                        elif key == "origin":
+                            f.write(
+                                f"#EXTVLCOPT:http-origin={value}\n"
+                            )
+
+                f.write(f"{url}\n")
+
+
+def create_log(data, filename="stv9.log"):
+
+    with open(filename, "w", encoding="utf-8") as log:
+
+        total_streams = sum(
+            len(ch.get("formats", []))
+            for ch in data
         )
-
-    except Exception:
-
-        return False
-
-
-def save_playlist(
-    header,
-    blocks,
-    filename
-):
-
-    with open(
-        filename,
-        "w",
-        encoding="utf-8"
-    ) as f:
-
-        for line in header:
-            f.write(line + "\n")
-
-        for block in blocks:
-
-            for line in block:
-                f.write(line + "\n")
-
-
-def save_log(
-    filename,
-    total,
-    online_list,
-    offline_list
-):
-
-    with open(
-        filename,
-        "w",
-        encoding="utf-8"
-    ) as log:
 
         log.write(
-            "STREAM VALIDATION REPORT\n"
+            f"Generated on: {datetime.datetime.now()}\n"
         )
 
-        log.write(
-            "=" * 60 + "\n"
-        )
+        log.write(f"Total channels: {len(data)}\n")
+        log.write(f"Total streams: {total_streams}\n\n")
 
-        log.write(
-            f"Generated : {datetime.datetime.now()}\n\n"
-        )
-
-        log.write(
-            f"Total Channel : {total}\n"
-        )
-
-        log.write(
-            f"Online        : {len(online_list)}\n"
-        )
-
-        log.write(
-            f"Offline       : {len(offline_list)}\n\n"
-        )
-
-        log.write(
-            "ONLINE CHANNELS\n"
-        )
-
-        log.write(
-            "-" * 60 + "\n"
-        )
-
-        for name, url in online_list:
+        for ch in data:
 
             log.write(
-                f"[ONLINE] {name}\n"
+                f"Channel: {ch.get('title', 'Unknown')}\n"
             )
 
-            log.write(
-                f"URL: {url}\n\n"
-            )
+            for fmt in ch.get("formats", []):
 
-        log.write(
-            "\nOFFLINE CHANNELS\n"
-        )
+                log.write(
+                    f"  {fmt.get('title')} -> "
+                    f"{fmt.get('link')}\n"
+                )
 
-        log.write(
-            "-" * 60 + "\n"
-        )
-
-        for name, url in offline_list:
-
-            log.write(
-                f"[OFFLINE] {name}\n"
-            )
-
-            log.write(
-                f"URL: {url}\n\n"
-            )
+            log.write("\n")
 
 
 def main():
 
-    try:
+    data = fetch_json(URL)
 
-        print("Downloading playlist...")
+    validate_data(data)
 
-        content = download_playlist(
-            PLAYLIST_URL
-        )
+    create_m3u(data)
+    create_log(data)
 
-        channel_count = validate_m3u(
-            content
-        )
-
-        print(
-            f"Valid playlist detected "
-            f"({channel_count} channels)"
-        )
-
-        header, blocks = parse_playlist(
-            content
-        )
-
-        total = len(blocks)
-
-        print(
-            f"Blocks found: {total}"
-        )
-
-        alive_blocks = []
-        online_list = []
-        offline_list = []
-
-        for idx, block in enumerate(
-            blocks,
-            start=1
-        ):
-
-            name = get_channel_name(block)
-
-            url = get_stream_url(block)
-
-            if not url:
-
-                print(
-                    f"[{idx}/{total}] {name} -> NO URL"
-                )
-
-                offline_list.append(
-                    (name, "NO URL")
-                )
-
-                continue
-
-            print(
-                f"[{idx}/{total}] {name}"
-            )
-
-            if stream_online(url):
-
-                alive_blocks.append(
-                    block
-                )
-
-                online_list.append(
-                    (name, url)
-                )
-
-                print("  ONLINE")
-
-            else:
-
-                offline_list.append(
-                    (name, url)
-                )
-
-                print("  OFFLINE")
-
-        save_playlist(
-            header,
-            alive_blocks,
-            OUTPUT_M3U
-        )
-
-        save_log(
-            OUTPUT_LOG,
-            total,
-            online_list,
-            offline_list
-        )
-
-        print()
-        print(
-            f"Saved playlist : {OUTPUT_M3U}"
-        )
-
-        print(
-            f"Saved log      : {OUTPUT_LOG}"
-        )
-
-    except Exception as e:
-
-        with open(
-            OUTPUT_LOG,
-            "w",
-            encoding="utf-8"
-        ) as log:
-
-            log.write(
-                f"ERROR: {e}\n"
-            )
-
-        print(
-            f"ERROR: {e}"
-        )
+    print(
+        f"Done. Channels={len(data)}, "
+        f"Streams={sum(len(c.get('formats', [])) for c in data)}"
+    )
 
 
 if __name__ == "__main__":
