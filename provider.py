@@ -1,201 +1,317 @@
-import json
-import datetime
 import requests
+import datetime
 
-URL = "https://raw.githubusercontent.com/darkbyteprojects/iptv_png/refs/heads/main/provider_3/sports_channels.json"
+PLAYLIST_URL = "https://raw.githubusercontent.com/USERNAME/REPO/main/stv9.m3u"
 
+OUTPUT_M3U = "stv9.m3u"
+OUTPUT_LOG = "stv9.log"
 
-def fetch_json(url):
-    response = requests.get(url, timeout=30)
-    response.raise_for_status()
-    return response.json()
-
-
-def normalize_clearkey(api_value):
-    """
-    Convert:
-    kid:key
-
-    menjadi format Kodi:
-    {"keys":[{"kty":"oct","kid":"...","k":"..."}]}
-    jika diperlukan.
-    """
-
-    if not api_value:
-        return ""
-
-    return api_value.strip()
+TIMEOUT = 15
 
 
-def validate_data(data):
+def download_playlist(url):
+    r = requests.get(url, timeout=30)
+    r.raise_for_status()
+    return r.text
 
-    if not isinstance(data, list):
-        raise ValueError("JSON root must be a list")
 
-    for idx, channel in enumerate(data):
+def extract_real_url(url):
+    return url.split("|", 1)[0].strip()
 
-        if not isinstance(channel, dict):
-            raise ValueError(f"Channel #{idx} is not an object")
 
-        if "formats" not in channel:
-            raise ValueError(
-                f"Channel '{channel.get('title', 'unknown')}' has no formats field"
+def parse_playlist(content):
+    lines = content.splitlines()
+
+    header = []
+    blocks = []
+    current_block = []
+
+    for line in lines:
+
+        if line.startswith("#EXTM3U"):
+            header.append(line)
+            continue
+
+        if line.startswith("#EXTINF"):
+
+            if current_block:
+                blocks.append(current_block)
+
+            current_block = [line]
+
+        else:
+
+            if current_block:
+                current_block.append(line)
+
+    if current_block:
+        blocks.append(current_block)
+
+    return header, blocks
+
+
+def get_channel_name(block):
+
+    for line in block:
+
+        if line.startswith("#EXTINF"):
+
+            if "," in line:
+                return line.split(",", 1)[1].strip()
+
+            return "Unknown"
+
+    return "Unknown"
+
+
+def get_stream_url(block):
+
+    for line in reversed(block):
+
+        line = line.strip()
+
+        if not line:
+            continue
+
+        if line.startswith("#"):
+            continue
+
+        return extract_real_url(line)
+
+    return None
+
+
+def stream_online(url):
+
+    try:
+
+        headers = {
+            "User-Agent": "Mozilla/5.0"
+        }
+
+        try:
+
+            resp = requests.head(
+                url,
+                headers=headers,
+                allow_redirects=True,
+                timeout=TIMEOUT,
             )
 
-        if not isinstance(channel["formats"], list):
-            raise ValueError(
-                f"formats of '{channel.get('title')}' must be a list"
-            )
+            if resp.status_code in (
+                200,
+                206,
+                301,
+                302,
+            ):
+                return True
 
-    return True
+        except Exception:
+            pass
 
-
-def create_m3u(data, filename="stv9.m3u"):
-
-    with open(filename, "w", encoding="utf-8") as f:
-
-        f.write(
-            '#EXTM3U url-tvg="https://raw.githubusercontent.com/buhtigd1/EPG3/main/epg.xml.gz"\n'
+        resp = requests.get(
+            url,
+            headers=headers,
+            stream=True,
+            allow_redirects=True,
+            timeout=TIMEOUT,
         )
 
-        for ch in data:
+        return resp.status_code in (
+            200,
+            206,
+        )
 
-            channel_name = ch.get("title", "Unknown Channel")
-            logo = ch.get("image", "")
-            group = ch.get("cat", "Sports")
-
-            for fmt in ch.get("formats", []):
-
-                title = fmt.get("title", channel_name)
-                link = fmt.get("link", "")
-                api = fmt.get("api", "")
-                stream_type = str(fmt.get("type", ""))
-
-                if not link:
-                    continue
-
-                full_name = f"{channel_name} - {title}"
-
-                f.write(
-                    f'#EXTINF:-1 tvg-id="{full_name}" '
-                    f'tvg-name="{full_name}" '
-                    f'tvg-logo="{logo}" '
-                    f'group-title="{group}",{full_name}\n'
-                )
-
-                # DASH
-                if ".mpd" in link:
-
-                    f.write(
-                        "#KODIPROP:inputstream=inputstream.adaptive\n"
-                    )
-
-                    f.write(
-                        "#KODIPROP:inputstream.adaptive.manifest_type=mpd\n"
-                    )
-
-                    # type 7 biasanya DRM
-                    if api:
-
-                        f.write(
-                            "#KODIPROP:inputstream.adaptive.license_type=clearkey\n"
-                        )
-
-                        f.write(
-                            "#KODIPROP:inputstream.adaptive.license_key="
-                            f"{normalize_clearkey(api)}\n"
-                        )
-
-                # HLS
-                elif ".m3u8" in link:
-
-                    f.write(
-                        "#KODIPROP:inputstream=inputstream.ffmpeg\n"
-                    )
-
-                    f.write(
-                        "#KODIPROP:inputstream.adaptive.manifest_type=hls\n"
-                    )
-
-                url = link
-
-                if "|" in url:
-
-                    url, headers = url.split("|", 1)
-
-                    headers = headers.replace("&amp;", "&")
-
-                    for header in headers.split("&"):
-
-                        if "=" not in header:
-                            continue
-
-                        key, value = header.split("=", 1)
-
-                        key = key.lower()
-
-                        if key == "user-agent":
-                            f.write(
-                                f"#EXTVLCOPT:http-user-agent={value}\n"
-                            )
-
-                        elif key == "referer":
-                            f.write(
-                                f"#EXTVLCOPT:http-referrer={value}\n"
-                            )
-
-                        elif key == "origin":
-                            f.write(
-                                f"#EXTVLCOPT:http-origin={value}\n"
-                            )
-
-                f.write(f"{url}\n")
+    except Exception:
+        return False
 
 
-def create_log(data, filename="stv9.log"):
+def save_playlist(header, blocks, filename):
 
-    with open(filename, "w", encoding="utf-8") as log:
+    with open(
+        filename,
+        "w",
+        encoding="utf-8"
+    ) as f:
 
-        total_streams = sum(
-            len(ch.get("formats", []))
-            for ch in data
+        for line in header:
+            f.write(line + "\n")
+
+        for block in blocks:
+
+            for line in block:
+                f.write(line + "\n")
+
+
+def save_log(
+    filename,
+    total,
+    online_list,
+    offline_list
+):
+
+    with open(
+        filename,
+        "w",
+        encoding="utf-8"
+    ) as log:
+
+        log.write(
+            "STREAM VALIDATION REPORT\n"
         )
 
         log.write(
-            f"Generated on: {datetime.datetime.now()}\n"
+            "=" * 60 + "\n"
         )
 
-        log.write(f"Total channels: {len(data)}\n")
-        log.write(f"Total streams: {total_streams}\n\n")
+        log.write(
+            f"Generated : {datetime.datetime.now()}\n\n"
+        )
 
-        for ch in data:
+        log.write(
+            f"Total Channel : {total}\n"
+        )
+
+        log.write(
+            f"Online        : {len(online_list)}\n"
+        )
+
+        log.write(
+            f"Offline       : {len(offline_list)}\n\n"
+        )
+
+        log.write(
+            "ONLINE CHANNELS\n"
+        )
+
+        log.write(
+            "-" * 60 + "\n"
+        )
+
+        for name, url in online_list:
 
             log.write(
-                f"Channel: {ch.get('title', 'Unknown')}\n"
+                f"[ONLINE] {name}\n"
             )
 
-            for fmt in ch.get("formats", []):
+            log.write(
+                f"URL: {url}\n\n"
+            )
 
-                log.write(
-                    f"  {fmt.get('title')} -> "
-                    f"{fmt.get('link')}\n"
-                )
+        log.write("\n")
 
-            log.write("\n")
+        log.write(
+            "OFFLINE CHANNELS\n"
+        )
+
+        log.write(
+            "-" * 60 + "\n"
+        )
+
+        for name, url in offline_list:
+
+            log.write(
+                f"[OFFLINE] {name}\n"
+            )
+
+            log.write(
+                f"URL: {url}\n\n"
+            )
 
 
 def main():
 
-    data = fetch_json(URL)
+    print("Downloading playlist...")
 
-    validate_data(data)
+    content = download_playlist(
+        PLAYLIST_URL
+    )
 
-    create_m3u(data)
-    create_log(data)
+    header, blocks = parse_playlist(
+        content
+    )
+
+    total = len(blocks)
+
+    alive_blocks = []
+    online_list = []
+    offline_list = []
 
     print(
-        f"Done. Channels={len(data)}, "
-        f"Streams={sum(len(c.get('formats', [])) for c in data)}"
+        f"Found {total} channels\n"
+    )
+
+    for idx, block in enumerate(
+        blocks,
+        start=1
+    ):
+
+        name = get_channel_name(block)
+
+        url = get_stream_url(block)
+
+        if not url:
+
+            print(
+                f"[{idx}/{total}] {name} -> NO URL"
+            )
+
+            offline_list.append(
+                (name, "NO URL")
+            )
+
+            continue
+
+        print(
+            f"[{idx}/{total}] Checking {name}"
+        )
+
+        if stream_online(url):
+
+            alive_blocks.append(block)
+
+            online_list.append(
+                (name, url)
+            )
+
+            print("  ONLINE")
+
+        else:
+
+            offline_list.append(
+                (name, url)
+            )
+
+            print("  OFFLINE")
+
+    save_playlist(
+        header,
+        alive_blocks,
+        OUTPUT_M3U,
+    )
+
+    save_log(
+        OUTPUT_LOG,
+        total,
+        online_list,
+        offline_list,
+    )
+
+    print("\nDone")
+    print(
+        f"Total   : {total}"
+    )
+    print(
+        f"Online  : {len(online_list)}"
+    )
+    print(
+        f"Offline : {len(offline_list)}"
+    )
+    print(
+        f"Saved   : {OUTPUT_M3U}"
+    )
+    print(
+        f"Log     : {OUTPUT_LOG}"
     )
 
 
