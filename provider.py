@@ -10,16 +10,68 @@ TIMEOUT = 15
 
 
 def download_playlist(url):
+
     r = requests.get(url, timeout=30)
     r.raise_for_status()
+
     return r.text
 
 
+def validate_m3u(content):
+
+    if not content:
+        raise ValueError("Playlist kosong")
+
+    text = content.strip()
+
+    if (
+        text.startswith("<!DOCTYPE html")
+        or text.startswith("<html")
+    ):
+        raise ValueError(
+            "HTML terdeteksi. Gunakan RAW GitHub URL."
+        )
+
+    if "404: Not Found" in text:
+        raise ValueError(
+            "Playlist tidak ditemukan (404)"
+        )
+
+    lines = text.splitlines()
+
+    if not lines:
+        raise ValueError(
+            "Playlist tidak memiliki isi"
+        )
+
+    first_line = lines[0].strip()
+
+    if not first_line.startswith("#EXTM3U"):
+        raise ValueError(
+            "Header #EXTM3U tidak ditemukan"
+        )
+
+    extinf_count = sum(
+        1
+        for line in lines
+        if line.strip().startswith("#EXTINF")
+    )
+
+    if extinf_count == 0:
+        raise ValueError(
+            "Tidak ditemukan channel (#EXTINF)"
+        )
+
+    return extinf_count
+
+
 def extract_real_url(url):
+
     return url.split("|", 1)[0].strip()
 
 
 def parse_playlist(content):
+
     lines = content.splitlines()
 
     header = []
@@ -32,17 +84,16 @@ def parse_playlist(content):
             header.append(line)
             continue
 
-        if line.startswith("#EXTINF"):
+        if line.strip().startswith("#EXTINF"):
 
             if current_block:
                 blocks.append(current_block)
 
             current_block = [line]
 
-        else:
+        elif current_block:
 
-            if current_block:
-                current_block.append(line)
+            current_block.append(line)
 
     if current_block:
         blocks.append(current_block)
@@ -58,8 +109,6 @@ def get_channel_name(block):
 
             if "," in line:
                 return line.split(",", 1)[1].strip()
-
-            return "Unknown"
 
     return "Unknown"
 
@@ -83,50 +132,55 @@ def get_stream_url(block):
 
 def stream_online(url):
 
-    try:
+    headers = {
+        "User-Agent": "Mozilla/5.0"
+    }
 
-        headers = {
-            "User-Agent": "Mozilla/5.0"
-        }
+    try:
 
         try:
 
-            resp = requests.head(
+            r = requests.head(
                 url,
                 headers=headers,
-                allow_redirects=True,
                 timeout=TIMEOUT,
+                allow_redirects=True
             )
 
-            if resp.status_code in (
+            if r.status_code in (
                 200,
                 206,
                 301,
-                302,
+                302
             ):
                 return True
 
         except Exception:
             pass
 
-        resp = requests.get(
+        r = requests.get(
             url,
             headers=headers,
-            stream=True,
-            allow_redirects=True,
             timeout=TIMEOUT,
+            stream=True,
+            allow_redirects=True
         )
 
-        return resp.status_code in (
+        return r.status_code in (
             200,
-            206,
+            206
         )
 
     except Exception:
+
         return False
 
 
-def save_playlist(header, blocks, filename):
+def save_playlist(
+    header,
+    blocks,
+    filename
+):
 
     with open(
         filename,
@@ -198,10 +252,8 @@ def save_log(
                 f"URL: {url}\n\n"
             )
 
-        log.write("\n")
-
         log.write(
-            "OFFLINE CHANNELS\n"
+            "\nOFFLINE CHANNELS\n"
         )
 
         log.write(
@@ -221,98 +273,119 @@ def save_log(
 
 def main():
 
-    print("Downloading playlist...")
+    try:
 
-    content = download_playlist(
-        PLAYLIST_URL
-    )
+        print("Downloading playlist...")
 
-    header, blocks = parse_playlist(
-        content
-    )
-
-    total = len(blocks)
-
-    alive_blocks = []
-    online_list = []
-    offline_list = []
-
-    print(
-        f"Found {total} channels\n"
-    )
-
-    for idx, block in enumerate(
-        blocks,
-        start=1
-    ):
-
-        name = get_channel_name(block)
-
-        url = get_stream_url(block)
-
-        if not url:
-
-            print(
-                f"[{idx}/{total}] {name} -> NO URL"
-            )
-
-            offline_list.append(
-                (name, "NO URL")
-            )
-
-            continue
-
-        print(
-            f"[{idx}/{total}] Checking {name}"
+        content = download_playlist(
+            PLAYLIST_URL
         )
 
-        if stream_online(url):
+        channel_count = validate_m3u(
+            content
+        )
 
-            alive_blocks.append(block)
+        print(
+            f"Valid playlist detected "
+            f"({channel_count} channels)"
+        )
 
-            online_list.append(
-                (name, url)
+        header, blocks = parse_playlist(
+            content
+        )
+
+        total = len(blocks)
+
+        print(
+            f"Blocks found: {total}"
+        )
+
+        alive_blocks = []
+        online_list = []
+        offline_list = []
+
+        for idx, block in enumerate(
+            blocks,
+            start=1
+        ):
+
+            name = get_channel_name(block)
+
+            url = get_stream_url(block)
+
+            if not url:
+
+                print(
+                    f"[{idx}/{total}] {name} -> NO URL"
+                )
+
+                offline_list.append(
+                    (name, "NO URL")
+                )
+
+                continue
+
+            print(
+                f"[{idx}/{total}] {name}"
             )
 
-            print("  ONLINE")
+            if stream_online(url):
 
-        else:
+                alive_blocks.append(
+                    block
+                )
 
-            offline_list.append(
-                (name, url)
+                online_list.append(
+                    (name, url)
+                )
+
+                print("  ONLINE")
+
+            else:
+
+                offline_list.append(
+                    (name, url)
+                )
+
+                print("  OFFLINE")
+
+        save_playlist(
+            header,
+            alive_blocks,
+            OUTPUT_M3U
+        )
+
+        save_log(
+            OUTPUT_LOG,
+            total,
+            online_list,
+            offline_list
+        )
+
+        print()
+        print(
+            f"Saved playlist : {OUTPUT_M3U}"
+        )
+
+        print(
+            f"Saved log      : {OUTPUT_LOG}"
+        )
+
+    except Exception as e:
+
+        with open(
+            OUTPUT_LOG,
+            "w",
+            encoding="utf-8"
+        ) as log:
+
+            log.write(
+                f"ERROR: {e}\n"
             )
 
-            print("  OFFLINE")
-
-    save_playlist(
-        header,
-        alive_blocks,
-        OUTPUT_M3U,
-    )
-
-    save_log(
-        OUTPUT_LOG,
-        total,
-        online_list,
-        offline_list,
-    )
-
-    print("\nDone")
-    print(
-        f"Total   : {total}"
-    )
-    print(
-        f"Online  : {len(online_list)}"
-    )
-    print(
-        f"Offline : {len(offline_list)}"
-    )
-    print(
-        f"Saved   : {OUTPUT_M3U}"
-    )
-    print(
-        f"Log     : {OUTPUT_LOG}"
-    )
+        print(
+            f"ERROR: {e}"
+        )
 
 
 if __name__ == "__main__":
