@@ -11,65 +11,47 @@ def fetch_json(url):
     return response.json()
 
 
+def normalize_clearkey(api_value):
+    """
+    Convert:
+    kid:key
+
+    menjadi format Kodi:
+    {"keys":[{"kty":"oct","kid":"...","k":"..."}]}
+    jika diperlukan.
+    """
+
+    if not api_value:
+        return ""
+
+    return api_value.strip()
+
+
 def validate_data(data):
-    """Validate JSON structure before processing."""
 
     if not isinstance(data, list):
-        raise ValueError("JSON root harus berupa array/list")
+        raise ValueError("JSON root must be a list")
 
-    for i, channel in enumerate(data):
+    for idx, channel in enumerate(data):
 
         if not isinstance(channel, dict):
-            raise ValueError(f"Item channel ke-{i} bukan object")
+            raise ValueError(f"Channel #{idx} is not an object")
 
-        if "name" not in channel:
-            raise ValueError(f"Channel ke-{i} tidak memiliki field 'name'")
-
-        if "streams" not in channel:
+        if "formats" not in channel:
             raise ValueError(
-                f"Channel '{channel.get('name', 'Unknown')}' tidak memiliki field 'streams'"
+                f"Channel '{channel.get('title', 'unknown')}' has no formats field"
             )
 
-        if not isinstance(channel["streams"], list):
+        if not isinstance(channel["formats"], list):
             raise ValueError(
-                f"Field streams pada '{channel['name']}' harus berupa array"
+                f"formats of '{channel.get('title')}' must be a list"
             )
-
-        for j, stream in enumerate(channel["streams"]):
-
-            if not isinstance(stream, dict):
-                raise ValueError(
-                    f"Stream ke-{j} pada channel '{channel['name']}' bukan object"
-                )
-
-            if "link" not in stream:
-                raise ValueError(
-                    f"Stream ke-{j} pada channel '{channel['name']}' "
-                    f"tidak memiliki field 'link'"
-                )
 
     return True
 
 
-def normalize_drm_key(drm_key: str) -> str:
-    """Return drm_key as a single-line string suitable for Kodi."""
-
-    if not drm_key:
-        return ""
-
-    drm_key = drm_key.strip()
-
-    if drm_key.startswith("{"):
-        try:
-            parsed = json.loads(drm_key)
-            return json.dumps(parsed, separators=(",", ":"))
-        except Exception:
-            return " ".join(drm_key.split())
-
-    return drm_key
-
-
 def create_m3u(data, filename="stv9.m3u"):
+
     with open(filename, "w", encoding="utf-8") as f:
 
         f.write(
@@ -78,97 +60,109 @@ def create_m3u(data, filename="stv9.m3u"):
 
         for ch in data:
 
-            name = ch.get("name", "Unknown Channel")
-            logo = ch.get("logo", "")
-            group = ch.get("group", "Sports")
+            channel_name = ch.get("title", "Unknown Channel")
+            logo = ch.get("image", "")
+            group = ch.get("cat", "Sports")
 
-            for stream in ch.get("streams", []):
+            for fmt in ch.get("formats", []):
 
-                raw_link = stream.get("link", "")
-                drm_key = stream.get("drm_key", "")
-                drm_scheme = stream.get("drm_scheme", "")
-                title = stream.get("name", name)
+                title = fmt.get("title", channel_name)
+                link = fmt.get("link", "")
+                api = fmt.get("api", "")
+                stream_type = str(fmt.get("type", ""))
 
-                if not raw_link:
+                if not link:
                     continue
 
-                tvg_id = title
+                full_name = f"{channel_name} - {title}"
 
                 f.write(
-                    f'#EXTINF:-1 tvg-id="{tvg_id}" '
-                    f'tvg-name="{title}" '
+                    f'#EXTINF:-1 tvg-id="{full_name}" '
+                    f'tvg-name="{full_name}" '
                     f'tvg-logo="{logo}" '
-                    f'group-title="{group}",{title}\n'
+                    f'group-title="{group}",{full_name}\n'
                 )
 
                 # DASH
-                if ".mpd" in raw_link:
-                    f.write("#KODIPROP:inputstream=inputstream.adaptive\n")
+                if ".mpd" in link:
+
+                    f.write(
+                        "#KODIPROP:inputstream=inputstream.adaptive\n"
+                    )
+
                     f.write(
                         "#KODIPROP:inputstream.adaptive.manifest_type=mpd\n"
                     )
 
-                    if drm_scheme.lower() == "clearkey":
+                    # type 7 biasanya DRM
+                    if api:
+
                         f.write(
                             "#KODIPROP:inputstream.adaptive.license_type=clearkey\n"
                         )
 
-                        if drm_key:
-                            f.write(
-                                "#KODIPROP:inputstream.adaptive.license_key="
-                                f"{normalize_drm_key(drm_key)}\n"
-                            )
+                        f.write(
+                            "#KODIPROP:inputstream.adaptive.license_key="
+                            f"{normalize_clearkey(api)}\n"
+                        )
 
                 # HLS
-                elif ".m3u8" in raw_link:
-                    f.write("#KODIPROP:inputstream=inputstream.ffmpeg\n")
+                elif ".m3u8" in link:
+
+                    f.write(
+                        "#KODIPROP:inputstream=inputstream.ffmpeg\n"
+                    )
+
                     f.write(
                         "#KODIPROP:inputstream.adaptive.manifest_type=hls\n"
                     )
 
-                url = raw_link
+                url = link
 
-                # Handle extra headers
-                if "|" in raw_link:
-                    url, headers = raw_link.split("|", 1)
+                if "|" in url:
+
+                    url, headers = url.split("|", 1)
+
+                    headers = headers.replace("&amp;", "&")
 
                     for header in headers.split("&"):
 
                         if "=" not in header:
                             continue
 
-                        key, val = header.split("=", 1)
+                        key, value = header.split("=", 1)
+
                         key = key.lower()
 
                         if key == "user-agent":
                             f.write(
-                                f"#EXTVLCOPT:http-user-agent={val}\n"
-                            )
-
-                        elif key == "origin":
-                            f.write(
-                                f"#EXTVLCOPT:http-origin={val}\n"
+                                f"#EXTVLCOPT:http-user-agent={value}\n"
                             )
 
                         elif key == "referer":
                             f.write(
-                                f"#EXTVLCOPT:http-referrer={val}\n"
+                                f"#EXTVLCOPT:http-referrer={value}\n"
+                            )
+
+                        elif key == "origin":
+                            f.write(
+                                f"#EXTVLCOPT:http-origin={value}\n"
                             )
 
                 f.write(f"{url}\n")
 
 
 def create_log(data, filename="stv9.log"):
+
     with open(filename, "w", encoding="utf-8") as log:
 
-        log.write(
-            f"Generated on: "
-            f"{datetime.datetime.now():%Y-%m-%d %H:%M:%S}\n"
+        total_streams = sum(
+            len(ch.get("formats", []))
+            for ch in data
         )
 
-        total_streams = sum(
-            len(ch.get("streams", []))
-            for ch in data
+        log.write(
+            f"Generated on: {datetime.datetime.now()}\n"
         )
 
         log.write(f"Total channels: {len(data)}\n")
@@ -176,59 +170,35 @@ def create_log(data, filename="stv9.log"):
 
         for ch in data:
 
-            name = ch.get("name", "Unknown Channel")
+            log.write(
+                f"Channel: {ch.get('title', 'Unknown')}\n"
+            )
 
-            log.write(f"Channel: {name}\n")
-
-            for stream in ch.get("streams", []):
-
-                title = stream.get("name", "")
-                url = stream.get("link", "")
-                drm_key = stream.get("drm_key", "")
+            for fmt in ch.get("formats", []):
 
                 log.write(
-                    f"  {title} -> {url} | "
-                    f"drm_key={normalize_drm_key(drm_key)}\n"
+                    f"  {fmt.get('title')} -> "
+                    f"{fmt.get('link')}\n"
                 )
 
             log.write("\n")
 
 
 def main():
-    try:
-        print("Downloading JSON...")
 
-        data = fetch_json(URL)
+    data = fetch_json(URL)
 
-        print("Validating JSON structure...")
-        validate_data(data)
+    validate_data(data)
 
-        print("Creating M3U...")
-        create_m3u(data)
+    create_m3u(data)
+    create_log(data)
 
-        print("Creating LOG...")
-        create_log(data)
-
-        total_channels = len(data)
-        total_streams = sum(
-            len(ch.get("streams", []))
-            for ch in data
-        )
-
-        print(
-            f"Done! {total_channels} channels "
-            f"and {total_streams} streams processed."
-        )
-
-    except requests.exceptions.RequestException as e:
-        print(f"Network error: {e}")
-
-    except ValueError as e:
-        print(f"Validation error: {e}")
-
-    except Exception as e:
-        print(f"Unexpected error: {e}")
+    print(
+        f"Done. Channels={len(data)}, "
+        f"Streams={sum(len(c.get('formats', [])) for c in data)}"
+    )
 
 
 if __name__ == "__main__":
     main()
+``
