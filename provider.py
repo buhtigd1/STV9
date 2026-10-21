@@ -1,7 +1,7 @@
 import requests
 import datetime
 
-PLAYLIST_URL = "https://raw.githubusercontent.com/USERNAME/REPO/main/stv9.m3u"
+PLAYLIST_URL = "https://raw.githubusercontent.com/darkbyteprojects/iptv_png/refs/heads/main/provider_3/sports_channels.json"
 
 OUTPUT_M3U = "stv9.m3u"
 OUTPUT_LOG = "stv9.log"
