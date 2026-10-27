@@ -1,68 +1,60 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/buhtigd1/EPG3/main/epg.xml.gz"
-#EXTINF:-1 tvg-id="sony sports - SONY SPORTS 5" tvg-name="sony sports - SONY SPORTS 5" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - SONY SPORTS 5
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://drk6xq0vhn.gpcdn.net/live/ten_5_hd_720/index.m3u8
-#EXTINF:-1 tvg-id="sony sports - SONY SPORTS 1" tvg-name="sony sports - SONY SPORTS 1" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - SONY SPORTS 1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8
 #EXTINF:-1 tvg-id="sony sports - SONY SPORTS 2" tvg-name="sony sports - SONY SPORTS 2" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - SONY SPORTS 2
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://drk6xq0vhn.gpcdn.net/live/ten_2_hd_720/index.m3u8
-#EXTINF:-1 tvg-id="sony sports - AQ5" tvg-name="sony sports - AQ5" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - AQ5
+#EXTINF:-1 tvg-id="sony sports - SONY SPORTS 1" tvg-name="sony sports - SONY SPORTS 1" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - SONY SPORTS 1
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://allinonereborn2.online/livtest3/stream_proxy.php?url=https%3A%2F%2Fallinonereborn2.online%2Fsony-new%2Fplaylists%2Fsony_ten5_hd.m3u8
+https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8
+#EXTINF:-1 tvg-id="sony sports - SONY SPORTS 5" tvg-name="sony sports - SONY SPORTS 5" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - SONY SPORTS 5
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://drk6xq0vhn.gpcdn.net/live/ten_5_hd_720/index.m3u8
 #EXTINF:-1 tvg-id="sony sports - AQ2" tvg-name="sony sports - AQ2" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - AQ2
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://allinonereborn2.online/livtest3/stream_proxy.php?url=https%3A%2F%2Fallinonereborn2.online%2Fsony-new%2Fplaylists%2Fsony_ten2_hd.m3u8
-#EXTINF:-1 tvg-id="sony sports - AQ4" tvg-name="sony sports - AQ4" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - AQ4
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://allinonereborn2.online/livtest3/stream_proxy.php?url=https%3A%2F%2Fallinonereborn2.online%2Fsony-new%2Fplaylists%2Fsony_ten4_hd.m3u8
-#EXTINF:-1 tvg-id="sony sports - AQ1" tvg-name="sony sports - AQ1" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - AQ1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://allinonereborn2.online/livtest3/stream_proxy.php?url=https%3A%2F%2Fallinonereborn2.online%2Fsony-new%2Fplaylists%2Fsony_ten1_hd.m3u8
 #EXTINF:-1 tvg-id="sony sports - AQ3" tvg-name="sony sports - AQ3" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - AQ3
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://allinonereborn2.online/livtest3/stream_proxy.php?url=https%3A%2F%2Fallinonereborn2.online%2Fsony-new%2Fplaylists%2Fsony_ten3_hd.m3u8
-#EXTINF:-1 tvg-id="star sports - HD5" tvg-name="star sports - HD5" tvg-logo="https://storage.googleapis.com/impact-news-photo/news-photo/6679.uploadStarSportslogo.jpg" group-title="Sports",star sports - HD5
+#EXTINF:-1 tvg-id="sony sports - AQ1" tvg-name="sony sports - AQ1" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - AQ1
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://baila-lentoo.pages.dev/all-sp/373201.m3u8
-#EXTINF:-1 tvg-id="star sports - HD3" tvg-name="star sports - HD3" tvg-logo="https://storage.googleapis.com/impact-news-photo/news-photo/6679.uploadStarSportslogo.jpg" group-title="Sports",star sports - HD3
+https://allinonereborn2.online/livtest3/stream_proxy.php?url=https%3A%2F%2Fallinonereborn2.online%2Fsony-new%2Fplaylists%2Fsony_ten1_hd.m3u8
+#EXTINF:-1 tvg-id="sony sports - AQ5" tvg-name="sony sports - AQ5" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - AQ5
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://flussonic.defineatoz.com/starsportsselect1/tracks-v1/mono.m3u8
-#EXTINF:-1 tvg-id="star sports - HD4" tvg-name="star sports - HD4" tvg-logo="https://storage.googleapis.com/impact-news-photo/news-photo/6679.uploadStarSportslogo.jpg" group-title="Sports",star sports - HD4
+https://allinonereborn2.online/livtest3/stream_proxy.php?url=https%3A%2F%2Fallinonereborn2.online%2Fsony-new%2Fplaylists%2Fsony_ten5_hd.m3u8
+#EXTINF:-1 tvg-id="sony sports - AQ4" tvg-name="sony sports - AQ4" tvg-logo="https://bestmediainfo.com/uploads/2022/11/1669195187.Sony-Sports-Networ.jpg" group-title="Sports",sony sports - AQ4
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://flussonic.defineatoz.com/starsportsselect2sw/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="star sports - HD1" tvg-name="star sports - HD1" tvg-logo="https://storage.googleapis.com/impact-news-photo/news-photo/6679.uploadStarSportslogo.jpg" group-title="Sports",star sports - HD1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://flussonic.defineatoz.com/Starsports1/tracks-v1a1/mono.m3u8
+https://allinonereborn2.online/livtest3/stream_proxy.php?url=https%3A%2F%2Fallinonereborn2.online%2Fsony-new%2Fplaylists%2Fsony_ten4_hd.m3u8
 #EXTINF:-1 tvg-id="fox cricket  - Link 1" tvg-name="fox cricket  - Link 1" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9sjX43aoMJjmrX2JLXuABEoJfCV7fzpnRmNAl_J20CmBd9Rpk0KUtmbhDWY-z6ho8WUrKliHkynoNvTIX5W5_Kcg9gHNi3DDK6-oilHZunI4Xj33YvituffZb7b33hkDSqWu3YubbPcLSt8PgCRkZbdSCUtsORKNmJnVNA-sZqszK6QHNZjvRcJ0sOQ/s320/Fox%20Sports.jpg" group-title="Sports",fox cricket  - Link 1
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://baila-lentoo.pages.dev/all-sp/809389.m3u8
+#EXTINF:-1 tvg-id="star sports - HD5" tvg-name="star sports - HD5" tvg-logo="https://storage.googleapis.com/impact-news-photo/news-photo/6679.uploadStarSportslogo.jpg" group-title="Sports",star sports - HD5
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://baila-lentoo.pages.dev/all-sp/373201.m3u8
+#EXTINF:-1 tvg-id="star sports - HD4" tvg-name="star sports - HD4" tvg-logo="https://storage.googleapis.com/impact-news-photo/news-photo/6679.uploadStarSportslogo.jpg" group-title="Sports",star sports - HD4
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://flussonic.defineatoz.com/starsportsselect2sw/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="star sports - HD3" tvg-name="star sports - HD3" tvg-logo="https://storage.googleapis.com/impact-news-photo/news-photo/6679.uploadStarSportslogo.jpg" group-title="Sports",star sports - HD3
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://flussonic.defineatoz.com/starsportsselect1/tracks-v1/mono.m3u8
+#EXTINF:-1 tvg-id="star sports - HD1" tvg-name="star sports - HD1" tvg-logo="https://storage.googleapis.com/impact-news-photo/news-photo/6679.uploadStarSportslogo.jpg" group-title="Sports",star sports - HD1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://flussonic.defineatoz.com/Starsports1/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="CTSport - Server 1" tvg-name="CTSport - Server 1" tvg-logo="https://files.softicons.com/download/application-icons/circle-icons-add-on-1-by-martz90/png/256x256/ct-sport.png" group-title="Sports",CTSport - Server 1
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 http://88.212.7.10/live/test_ctsport_25p/playlist.m3u8
-#EXTINF:-1 tvg-id="t sportss - HD2" tvg-name="t sportss - HD2" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNoRTQBtjGlMCjMXhwKV3COXy4njZjxwq9SUqdJ1LjLQ&s" group-title="Sports",t sportss - HD2
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-http://103.151.60.162:2122/play/a030/index.m3u8
-#EXTINF:-1 tvg-id="t sportss - HD1" tvg-name="t sportss - HD1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNoRTQBtjGlMCjMXhwKV3COXy4njZjxwq9SUqdJ1LjLQ&s" group-title="Sports",t sportss - HD1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-http://103.16.24.4:8083/14.m3u8
 #EXTINF:-1 tvg-id="PTV Sports - PTV HD" tvg-name="PTV Sports - PTV HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwvXergAoVvZCJbYBO-IEeNvZPxdXr97TaPKDkQSA_tA&s" group-title="Sports",PTV Sports - PTV HD
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
@@ -71,11 +63,22 @@ http://103.151.60.162:2122/play/a0f9/index.m3u8
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://live.msnetworks.net/ptv-sports/master.m3u8
-#EXTINF:-1 tvg-id="sky cricket - HD1" tvg-name="sky cricket - HD1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcL1ZfAiMcm7NsWybZ1KJo9ilUUtRfs4S9uMLTklknN2ubWqU4UW2cuU4&s=10" group-title="Sports",sky cricket - HD1
+#EXTINF:-1 tvg-id="t sportss - HD2" tvg-name="t sportss - HD2" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNoRTQBtjGlMCjMXhwKV3COXy4njZjxwq9SUqdJ1LjLQ&s" group-title="Sports",t sportss - HD2
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-#EXTVLCOPT:http-user-agent=Mozilla
-https://bl.rutube.ru/livestream/7c13a51576b9ff2601f08f5d57dd5169/index.m3u8?s=uiXES2ePt7xTpQnbJxn7Dg&e=2074684474&scheme=https
+http://103.151.60.162:2122/play/a030/index.m3u8
+#EXTINF:-1 tvg-id="t sportss - HD1" tvg-name="t sportss - HD1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNoRTQBtjGlMCjMXhwKV3COXy4njZjxwq9SUqdJ1LjLQ&s" group-title="Sports",t sportss - HD1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+http://103.16.24.4:8083/14.m3u8
+#EXTINF:-1 tvg-id="BEK - Server 1" tvg-name="BEK - Server 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-nWZdCFZiGlqzYU0djTCC7c59LBjZexdAy_-eihB7MGdezf0Pw33dKyM5&s=10" group-title="Sports",BEK - Server 1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://cdn3.wowza.com/5/ZWQ1K2NYTmpFbGsr/BEK-WOWZA-1/smil:BEKPRIMEW.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="tyc sports - Link 1" tvg-name="tyc sports - Link 1" tvg-logo="https://mir-s3-cdn-cf.behance.net/projects/404/e4dbdb61025523.Y3JvcCw5OTksNzgyLDAsMTAz.jpg" group-title="Sports",tyc sports - Link 1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8
 #EXTINF:-1 tvg-id="dubaisports - OMAN SPORTS" tvg-name="dubaisports - OMAN SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoQ_5BZsOtLWBBGoyU1Ec2ZERMo8zLroBKdA&usqp=CAU" group-title="Sports",dubaisports - OMAN SPORTS
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
@@ -88,98 +91,14 @@ https://5c7b683162943.streamlock.net/live/ngrp:bahrainsportstwo_all/playlist.m3u
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8
-#EXTINF:-1 tvg-id="tyc sports - Link 1" tvg-name="tyc sports - Link 1" tvg-logo="https://mir-s3-cdn-cf.behance.net/projects/404/e4dbdb61025523.Y3JvcCw5OTksNzgyLDAsMTAz.jpg" group-title="Sports",tyc sports - Link 1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8
-#EXTINF:-1 tvg-id="astro cricket - Server 1" tvg-name="astro cricket - Server 1" tvg-logo="https://dj7fdt04hl8tv.cloudfront.net/acm/media/njoi/cricket.png" group-title="Sports",astro cricket - Server 1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://d3bq19vx8xhpwy.cloudfront.net/live/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="nbcsportss - CNBC - AQ" tvg-name="nbcsportss - CNBC - AQ" tvg-logo="https://nypost.com/wp-content/uploads/sites/2/2025/11/nbc-sports-network-logo-nbc-33770999.jpg?quality=75&strip=all&w=1024" group-title="Sports",nbcsportss - CNBC - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"2351831e4519c8a7204669b56d276258","k":"c01f5966265cfb1fce0ec0ad9a317913"}]}
-https://ac-009.live.p7s1video.net/d2e237d7/t_009/cnbc/cenc-default.mpd
-#EXTINF:-1 tvg-id="tensports - PK SPORTS" tvg-name="tensports - PK SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYiaIFDLfHFtk2dF6xI7pnlExGjf9hzfzl3CZ9z_RwxL2Km1kZpDUD9LxMkKOQ095-dOmNs8Nw8AqLk1loHICoPFijIkqy_KGuCku2F4v6M_V8LkUKfEvk_d6U9iiipJkxg_VVK0m0KksKPkiQoylB_XGMQcKrhcoWqGidQCNRwzFsdcMg_n_mbaXozA/w320-h320/Ten%20Sports%20Logo.jpg" group-title="Sports",tensports - PK SPORTS
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://lbgo.bozztv.com/ssh101/ssh101/pksportshd/playlist.m3u8
-#EXTINF:-1 tvg-id="tensports - TEN CRICKET" tvg-name="tensports - TEN CRICKET" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYiaIFDLfHFtk2dF6xI7pnlExGjf9hzfzl3CZ9z_RwxL2Km1kZpDUD9LxMkKOQ095-dOmNs8Nw8AqLk1loHICoPFijIkqy_KGuCku2F4v6M_V8LkUKfEvk_d6U9iiipJkxg_VVK0m0KksKPkiQoylB_XGMQcKrhcoWqGidQCNRwzFsdcMg_n_mbaXozA/w320-h320/Ten%20Sports%20Logo.jpg" group-title="Sports",tensports - TEN CRICKET
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-http://103.151.60.162:2122/play/a0fj/index.m3u8
-#EXTINF:-1 tvg-id="Redbull - Server 1" tvg-name="Redbull - Server 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCVw95FNkWMoDPd1akJTp_OrvAAbtOgD1Fc_XmzJ6gZEb99UfGLDPasMI&s=10" group-title="Sports",Redbull - Server 1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
-#EXTINF:-1 tvg-id="telemundo - AQ1" tvg-name="telemundo - AQ1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqfFET1Q6WrEtJWZbEbjTk37S2VmZXF-b8-NCn7CtbHut-E09EVVag4DE&s=10" group-title="Sports",telemundo - AQ1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master_1080.m3u8
-#EXTINF:-1 tvg-id="telemundo - AQ2" tvg-name="telemundo - AQ2" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqfFET1Q6WrEtJWZbEbjTk37S2VmZXF-b8-NCn7CtbHut-E09EVVag4DE&s=10" group-title="Sports",telemundo - AQ2
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
-#EXTINF:-1 tvg-id="UNBEATEN - Server 1" tvg-name="UNBEATEN - Server 1" tvg-logo="https://i.ibb.co/n3sjJ1d/unbeaten.png" group-title="Sports",UNBEATEN - Server 1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00721-inverleigh-unbeaten-lges/playlist.m3u8
-#EXTINF:-1 tvg-id="tennis - TENNIS PLUS" tvg-name="tennis - TENNIS PLUS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfah2yJLgESmJjBXvh-C3hHpTBr8re_w5pYg&usqp=CAU" group-title="Sports",tennis - TENNIS PLUS
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://amg01935-amg01935c1-amgplt0020.playout.now3.amagi.tv/playlist/amg01935-amg01935c1-amgplt0020/playlist.m3u8
-#EXTINF:-1 tvg-id="tennis - TRAC SPORTS" tvg-name="tennis - TRAC SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfah2yJLgESmJjBXvh-C3hHpTBr8re_w5pYg&usqp=CAU" group-title="Sports",tennis - TRAC SPORTS
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="PAC 12 INSIDER - Server 1" tvg-name="PAC 12 INSIDER - Server 1" tvg-logo="https://image.xumo.com/v1/channels/channel/99991143/500x400.webp?type=color_onBlack" group-title="Sports",PAC 12 INSIDER - Server 1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://pac12-vizio.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="dd sports - link 1" tvg-name="dd sports - link 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFOyzyD_StzIsw2VF6y6qWNw6mrdvK0OHx4PfHtj5YBjwDdUWz8PixitS&s=10" group-title="Sports",dd sports - link 1
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8
-#EXTINF:-1 tvg-id="RALLY TV - Server 1" tvg-name="RALLY TV - Server 1" tvg-logo="https://play-lh.googleusercontent.com/yGC9brvzJBdkj8D2iyr1FmtE2FOM4myhn83rWR1DsJR4jXBwpQSHa7OkS9Q1_XVqQGl-" group-title="Sports",RALLY TV - Server 1
+#EXTINF:-1 tvg-id="astro cricket - Server 1" tvg-name="astro cricket - Server 1" tvg-logo="https://dj7fdt04hl8tv.cloudfront.net/acm/media/njoi/cricket.png" group-title="Sports",astro cricket - Server 1
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-https://dms.redbull.tv/v5/destination/rallytv/07f960dc-fd36-466c-971f-64a597518b83/personal_computer/http/us/es_US/playlist.m3u8
-#EXTINF:-1 tvg-id="channel4 - C4" tvg-name="channel4 - C4" tvg-logo="https://informitv.com/wordpress/wp-content/uploads/2024/02/Channel4.png" group-title="Sports",channel4 - C4
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0000000000000000000000000063340a","k":"5ce85f1aa5771900b952f0ba58857d7a"}]}
-https://olsp.live.dash.c4assets.com/dash_iso_sp_tl/live/channel(c4)/manifest.mpd?
-#EXTINF:-1 tvg-id="channel4 - F4" tvg-name="channel4 - F4" tvg-logo="https://informitv.com/wordpress/wp-content/uploads/2024/02/Channel4.png" group-title="Sports",channel4 - F4
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0000000000000000000000000066340a","k":"627bcdc9e9556a74b05c5d311d8d2a61"}]}
-https://olsp.live.dash.c4assets.com/dash_iso_sp_tl/live/channel(f4)/manifest.mpd?
-#EXTINF:-1 tvg-id="channel4 - M4" tvg-name="channel4 - M4" tvg-logo="https://informitv.com/wordpress/wp-content/uploads/2024/02/Channel4.png" group-title="Sports",channel4 - M4
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"000000000000000000000000006d340a","k":"efee11d60dd6a2afb6865fc141e1c4a0"}]}
-https://olsp.live.dash.c4assets.com/dash_iso_sp_tl/live/channel(m4)/manifest.mpd?
-#EXTINF:-1 tvg-id="channel4 - E4" tvg-name="channel4 - E4" tvg-logo="https://informitv.com/wordpress/wp-content/uploads/2024/02/Channel4.png" group-title="Sports",channel4 - E4
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0000000000000000000000000065340a","k":"88a5d26b2dc54896693dea815df7c592"}]}
-https://olsp.live.dash.c4assets.com/dash_iso_sp_tl/live/channel(e4)/manifest.mpd?
-#EXTINF:-1 tvg-id="channel4 - 4S" tvg-name="channel4 - 4S" tvg-logo="https://informitv.com/wordpress/wp-content/uploads/2024/02/Channel4.png" group-title="Sports",channel4 - 4S
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0000000000000000000000000034730a","k":"19bfb83e0e0f40f6eef4eccedbfa7bb8"}]}
-https://olsp.live.dash.c4assets.com/dash_iso_sp_tl/live/channel(4s)/manifest.mpd?
-#EXTINF:-1 tvg-id="BEK - Server 1" tvg-name="BEK - Server 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-nWZdCFZiGlqzYU0djTCC7c59LBjZexdAy_-eihB7MGdezf0Pw33dKyM5&s=10" group-title="Sports",BEK - Server 1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://cdn3.wowza.com/5/ZWQ1K2NYTmpFbGsr/BEK-WOWZA-1/smil:BEKPRIMEW.smil/playlist.m3u8
+https://d3bq19vx8xhpwy.cloudfront.net/live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="SPORTDIGITAL - HD2" tvg-name="SPORTDIGITAL - HD2" tvg-logo="https://i.ibb.co/XX6rKD0/sdf.png" group-title="Sports",SPORTDIGITAL - HD2
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -192,26 +111,115 @@ https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/ssdefyhkkr/
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"56b79c1782b30e6b6fc973b0e8fd4104","k":"fa38aaa865a57eda7c77444697ba8ed3"}]}
 https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/nelfyucw9a/out/v1/6ffb2c365ad14f88b154591beb43d1f6/cenc.mpd
-#EXTINF:-1 tvg-id="united 8 sports - HD1" tvg-name="united 8 sports - HD1" tvg-logo="https://yt3.googleusercontent.com/K7y_STeJgNr3tP3m0F_Gk0rwsWE3Rs5GITVwKqc2ootLiKtyIxIH0K1XLk8NvwjI-iFqCJM78w=s900-c-k-c0x00ffffff-no-rj" group-title="Sports",united 8 sports - HD1
+#EXTINF:-1 tvg-id="tensports - PK SPORTS" tvg-name="tensports - PK SPORTS" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYiaIFDLfHFtk2dF6xI7pnlExGjf9hzfzl3CZ9z_RwxL2Km1kZpDUD9LxMkKOQ095-dOmNs8Nw8AqLk1loHICoPFijIkqy_KGuCku2F4v6M_V8LkUKfEvk_d6U9iiipJkxg_VVK0m0KksKPkiQoylB_XGMQcKrhcoWqGidQCNRwzFsdcMg_n_mbaXozA/w320-h320/Ten%20Sports%20Logo.jpg" group-title="Sports",tensports - PK SPORTS
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-http://103.205.132.29:8081/Unite8-sports-1/index.m3u8
-#EXTINF:-1 tvg-id="united 8 sports - HD2" tvg-name="united 8 sports - HD2" tvg-logo="https://yt3.googleusercontent.com/K7y_STeJgNr3tP3m0F_Gk0rwsWE3Rs5GITVwKqc2ootLiKtyIxIH0K1XLk8NvwjI-iFqCJM78w=s900-c-k-c0x00ffffff-no-rj" group-title="Sports",united 8 sports - HD2
+https://lbgo.bozztv.com/ssh101/ssh101/pksportshd/playlist.m3u8
+#EXTINF:-1 tvg-id="tensports - TEN CRICKET" tvg-name="tensports - TEN CRICKET" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYiaIFDLfHFtk2dF6xI7pnlExGjf9hzfzl3CZ9z_RwxL2Km1kZpDUD9LxMkKOQ095-dOmNs8Nw8AqLk1loHICoPFijIkqy_KGuCku2F4v6M_V8LkUKfEvk_d6U9iiipJkxg_VVK0m0KksKPkiQoylB_XGMQcKrhcoWqGidQCNRwzFsdcMg_n_mbaXozA/w320-h320/Ten%20Sports%20Logo.jpg" group-title="Sports",tensports - TEN CRICKET
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
-http://103.114.11.37:8081/Unite8-sports-1/index.m3u8?token=dsgdfgsdfgasf
-#EXTINF:-1 tvg-id="novasports - Nova Sport AQ2" tvg-name="novasports - Nova Sport AQ2" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ggj8fRO9nKmbVQ_rcHa82bphR9SmyJyZig&usqp=CAU" group-title="Sports",novasports - Nova Sport AQ2
+http://103.151.60.162:2122/play/a0fj/index.m3u8
+#EXTINF:-1 tvg-id="telemundo - AQ2" tvg-name="telemundo - AQ2" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqfFET1Q6WrEtJWZbEbjTk37S2VmZXF-b8-NCn7CtbHut-E09EVVag4DE&s=10" group-title="Sports",telemundo - AQ2
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+#EXTINF:-1 tvg-id="telemundo - AQ1" tvg-name="telemundo - AQ1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqfFET1Q6WrEtJWZbEbjTk37S2VmZXF-b8-NCn7CtbHut-E09EVVag4DE&s=10" group-title="Sports",telemundo - AQ1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master_1080.m3u8
+#EXTINF:-1 tvg-id="sky cricket - HD1" tvg-name="sky cricket - HD1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcL1ZfAiMcm7NsWybZ1KJo9ilUUtRfs4S9uMLTklknN2ubWqU4UW2cuU4&s=10" group-title="Sports",sky cricket - HD1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=Mozilla
+https://bl.rutube.ru/livestream/7c13a51576b9ff2601f08f5d57dd5169/index.m3u8?s=uiXES2ePt7xTpQnbJxn7Dg&e=2074684474&scheme=https
+#EXTINF:-1 tvg-id="UNBEATEN - Server 1" tvg-name="UNBEATEN - Server 1" tvg-logo="https://i.ibb.co/n3sjJ1d/unbeaten.png" group-title="Sports",UNBEATEN - Server 1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00721-inverleigh-unbeaten-lges/playlist.m3u8
+#EXTINF:-1 tvg-id="PAC 12 INSIDER - Server 1" tvg-name="PAC 12 INSIDER - Server 1" tvg-logo="https://image.xumo.com/v1/channels/channel/99991143/500x400.webp?type=color_onBlack" group-title="Sports",PAC 12 INSIDER - Server 1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://pac12-vizio.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Redbull - Server 1" tvg-name="Redbull - Server 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCVw95FNkWMoDPd1akJTp_OrvAAbtOgD1Fc_XmzJ6gZEb99UfGLDPasMI&s=10" group-title="Sports",Redbull - Server 1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:-1 tvg-id="RALLY TV - Server 1" tvg-name="RALLY TV - Server 1" tvg-logo="https://play-lh.googleusercontent.com/yGC9brvzJBdkj8D2iyr1FmtE2FOM4myhn83rWR1DsJR4jXBwpQSHa7OkS9Q1_XVqQGl-" group-title="Sports",RALLY TV - Server 1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://dms.redbull.tv/v5/destination/rallytv/07f960dc-fd36-466c-971f-64a597518b83/personal_computer/http/us/es_US/playlist.m3u8
+#EXTINF:-1 tvg-id="nbcsportss - CNBC - AQ" tvg-name="nbcsportss - CNBC - AQ" tvg-logo="https://nypost.com/wp-content/uploads/sites/2/2025/11/nbc-sports-network-logo-nbc-33770999.jpg?quality=75&strip=all&w=1024" group-title="Sports",nbcsportss - CNBC - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"11223344556677889900112233445566","k":"4b80724d0ef86bcb2c21f7999d67739d"}]}
-https://dash2.antik.sk/stream/nvidia_nova_sport2/playlist_cenc.mpd
-#EXTINF:-1 tvg-id="novasports - Nova Sport AQ1" tvg-name="novasports - Nova Sport AQ1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ggj8fRO9nKmbVQ_rcHa82bphR9SmyJyZig&usqp=CAU" group-title="Sports",novasports - Nova Sport AQ1
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"2351831e4519c8a7204669b56d276258","k":"c01f5966265cfb1fce0ec0ad9a317913"}]}
+https://ac-009.live.p7s1video.net/d2e237d7/t_009/cnbc/cenc-default.mpd
+#EXTINF:-1 tvg-id="tennis - TENNIS PLUS" tvg-name="tennis - TENNIS PLUS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfah2yJLgESmJjBXvh-C3hHpTBr8re_w5pYg&usqp=CAU" group-title="Sports",tennis - TENNIS PLUS
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://amg01935-amg01935c1-amgplt0020.playout.now3.amagi.tv/playlist/amg01935-amg01935c1-amgplt0020/playlist.m3u8
+#EXTINF:-1 tvg-id="tennis - TRAC SPORTS" tvg-name="tennis - TRAC SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfah2yJLgESmJjBXvh-C3hHpTBr8re_w5pYg&usqp=CAU" group-title="Sports",tennis - TRAC SPORTS
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="channel4 - C4" tvg-name="channel4 - C4" tvg-logo="https://informitv.com/wordpress/wp-content/uploads/2024/02/Channel4.png" group-title="Sports",channel4 - C4
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"11223344556677889900112233445566","k":"4b80724d0ef86bcb2c21f7999d67739d"}]}
-https://dash2.antik.sk/stream/nvidia_nova_sport1/playlist_cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0000000000000000000000000063340a","k":"5ce85f1aa5771900b952f0ba58857d7a"}]}
+https://olsp.live.dash.c4assets.com/dash_iso_sp_tl/live/channel(c4)/manifest.mpd?
+#EXTINF:-1 tvg-id="channel4 - F4" tvg-name="channel4 - F4" tvg-logo="https://informitv.com/wordpress/wp-content/uploads/2024/02/Channel4.png" group-title="Sports",channel4 - F4
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0000000000000000000000000066340a","k":"627bcdc9e9556a74b05c5d311d8d2a61"}]}
+https://olsp.live.dash.c4assets.com/dash_iso_sp_tl/live/channel(f4)/manifest.mpd?
+#EXTINF:-1 tvg-id="channel4 - E4" tvg-name="channel4 - E4" tvg-logo="https://informitv.com/wordpress/wp-content/uploads/2024/02/Channel4.png" group-title="Sports",channel4 - E4
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0000000000000000000000000065340a","k":"88a5d26b2dc54896693dea815df7c592"}]}
+https://olsp.live.dash.c4assets.com/dash_iso_sp_tl/live/channel(e4)/manifest.mpd?
+#EXTINF:-1 tvg-id="channel4 - 4S" tvg-name="channel4 - 4S" tvg-logo="https://informitv.com/wordpress/wp-content/uploads/2024/02/Channel4.png" group-title="Sports",channel4 - 4S
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0000000000000000000000000034730a","k":"19bfb83e0e0f40f6eef4eccedbfa7bb8"}]}
+https://olsp.live.dash.c4assets.com/dash_iso_sp_tl/live/channel(4s)/manifest.mpd?
+#EXTINF:-1 tvg-id="channel4 - M4" tvg-name="channel4 - M4" tvg-logo="https://informitv.com/wordpress/wp-content/uploads/2024/02/Channel4.png" group-title="Sports",channel4 - M4
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"000000000000000000000000006d340a","k":"efee11d60dd6a2afb6865fc141e1c4a0"}]}
+https://olsp.live.dash.c4assets.com/dash_iso_sp_tl/live/channel(m4)/manifest.mpd?
+#EXTINF:-1 tvg-id="premiersports - Premier Sports 1 - AQ (2)" tvg-name="premiersports - Premier Sports 1 - AQ (2)" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2N3muMyMzp3uu939QXWUO6cCn_tFRHVE8C7xqEn3Oryc-GW6ZQ9P1OyV8&s=10" group-title="Sports",premiersports - Premier Sports 1 - AQ (2)
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"1444f4235529f183f0a5a486befe9cdb","k":"e5e3fec67a1bb3472a2089c8a0a2557f"}]}
+#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
+#EXTINF:-1 tvg-id="premiersports - Premier Sports 2 - AQ (2)" tvg-name="premiersports - Premier Sports 2 - AQ (2)" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2N3muMyMzp3uu939QXWUO6cCn_tFRHVE8C7xqEn3Oryc-GW6ZQ9P1OyV8&s=10" group-title="Sports",premiersports - Premier Sports 2 - AQ (2)
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"1a5df53609ebc9857898c490f4724918","k":"77f62980d582ec541280796acf8b2d19"}]}
+#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd
+#EXTINF:-1 tvg-id="premiersports - PREMIER SPORTS 1 - AQ" tvg-name="premiersports - PREMIER SPORTS 1 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2N3muMyMzp3uu939QXWUO6cCn_tFRHVE8C7xqEn3Oryc-GW6ZQ9P1OyV8&s=10" group-title="Sports",premiersports - PREMIER SPORTS 1 - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"1444f4235529f183f0a5a486befe9cdb","k":"e5e3fec67a1bb3472a2089c8a0a2557f"}]}
+#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
+https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
+#EXTINF:-1 tvg-id="premiersports - PREMIER SPORTS 2 - AQ" tvg-name="premiersports - PREMIER SPORTS 2 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2N3muMyMzp3uu939QXWUO6cCn_tFRHVE8C7xqEn3Oryc-GW6ZQ9P1OyV8&s=10" group-title="Sports",premiersports - PREMIER SPORTS 2 - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"1a5df53609ebc9857898c490f4724918","k":"77f62980d582ec541280796acf8b2d19"}]}
+#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
+https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd
 #EXTINF:-1 tvg-id="tsn sports - TSN AQ1" tvg-name="tsn sports - TSN AQ1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDeS1e94tNIw0OlLoYnDjwWkXxxatlNDCHW-gEi39Evyc7uAUJs20x8qc&s=10" group-title="Sports",tsn sports - TSN AQ1
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -226,13 +234,6 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"85b277daf5aae05833fe43a68f587968","k":"d52d7e9bc0bcd98787efd547ac91eca0"}]}
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cjglydxghe/out/v1/8977baf175da4b94873194613dd3fe55/cenc.mpd
-#EXTINF:-1 tvg-id="tsn sports - TSN AQ3" tvg-name="tsn sports - TSN AQ3" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDeS1e94tNIw0OlLoYnDjwWkXxxatlNDCHW-gEi39Evyc7uAUJs20x8qc&s=10" group-title="Sports",tsn sports - TSN AQ3
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"d3250252765347a0c2603c6cb4869f8c","k":"0c19319460da7e9ed816db46ce839b37"}]}
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/lsibpqruq1/out/v1/748887d614a84913ba8bcdf3c82823e6/cenc.mpd
 #EXTINF:-1 tvg-id="tsn sports - TSN AQ5" tvg-name="tsn sports - TSN AQ5" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDeS1e94tNIw0OlLoYnDjwWkXxxatlNDCHW-gEi39Evyc7uAUJs20x8qc&s=10" group-title="Sports",tsn sports - TSN AQ5
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -247,18 +248,33 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cscevwljkq/out/v1
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"abc5b2883121012850ebda05b528c5ec","k":"e5250924f4b738905f7163a0134587a7"}]}
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ihys8nw4wv/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd
-#EXTINF:-1 tvg-id="sporttvnew - Sport TV 1 - AQ" tvg-name="sporttvnew - Sport TV 1 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xLD__y8czmQebpbPk_PrQwAVD1j1bNe0LKr-TqkYk8EhxdK9elpcJrs&s=10" group-title="Sports",sporttvnew - Sport TV 1 - AQ
+#EXTINF:-1 tvg-id="tsn sports - TSN AQ3" tvg-name="tsn sports - TSN AQ3" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDeS1e94tNIw0OlLoYnDjwWkXxxatlNDCHW-gEi39Evyc7uAUJs20x8qc&s=10" group-title="Sports",tsn sports - TSN AQ3
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"d3250252765347a0c2603c6cb4869f8c","k":"0c19319460da7e9ed816db46ce839b37"}]}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/lsibpqruq1/out/v1/748887d614a84913ba8bcdf3c82823e6/cenc.mpd
+#EXTINF:-1 tvg-id="united 8 sports - HD2" tvg-name="united 8 sports - HD2" tvg-logo="https://yt3.googleusercontent.com/K7y_STeJgNr3tP3m0F_Gk0rwsWE3Rs5GITVwKqc2ootLiKtyIxIH0K1XLk8NvwjI-iFqCJM78w=s900-c-k-c0x00ffffff-no-rj" group-title="Sports",united 8 sports - HD2
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+http://103.114.11.37:8081/Unite8-sports-1/index.m3u8?token=dsgdfgsdfgasf
+#EXTINF:-1 tvg-id="united 8 sports - HD1" tvg-name="united 8 sports - HD1" tvg-logo="https://yt3.googleusercontent.com/K7y_STeJgNr3tP3m0F_Gk0rwsWE3Rs5GITVwKqc2ootLiKtyIxIH0K1XLk8NvwjI-iFqCJM78w=s900-c-k-c0x00ffffff-no-rj" group-title="Sports",united 8 sports - HD1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+http://103.205.132.29:8081/Unite8-sports-1/index.m3u8
+#EXTINF:-1 tvg-id="novasports - Nova Sport AQ2" tvg-name="novasports - Nova Sport AQ2" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ggj8fRO9nKmbVQ_rcHa82bphR9SmyJyZig&usqp=CAU" group-title="Sports",novasports - Nova Sport AQ2
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"11223344556677889900112233445566","k":"4b80724d0ef86bcb2c21f7999d67739d"}]}
-https://dash2.antik.sk/stream/nvidia_sport_1/playlist_cenc.mpd
-#EXTINF:-1 tvg-id="sporttvnew - Sport TV 2 - AQ" tvg-name="sporttvnew - Sport TV 2 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xLD__y8czmQebpbPk_PrQwAVD1j1bNe0LKr-TqkYk8EhxdK9elpcJrs&s=10" group-title="Sports",sporttvnew - Sport TV 2 - AQ
+https://dash2.antik.sk/stream/nvidia_nova_sport2/playlist_cenc.mpd
+#EXTINF:-1 tvg-id="novasports - Nova Sport AQ1" tvg-name="novasports - Nova Sport AQ1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ggj8fRO9nKmbVQ_rcHa82bphR9SmyJyZig&usqp=CAU" group-title="Sports",novasports - Nova Sport AQ1
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"11223344556677889900112233445566","k":"4b80724d0ef86bcb2c21f7999d67739d"}]}
-https://dash2.antik.sk/stream/nvidia_sport2/playlist_cenc.mpd
+https://dash2.antik.sk/stream/nvidia_nova_sport1/playlist_cenc.mpd
 #EXTINF:-1 tvg-id="euro sports - EURO ES 2 - AQ" tvg-name="euro sports - EURO ES 2 - AQ" tvg-logo="https://clipground.com/images/eurosport-logo-6.jpg" group-title="Sports",euro sports - EURO ES 2 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -271,70 +287,105 @@ https://dash2.antik.sk/stream/nvidia_eurosport2/playlist_cenc.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"11223344556677889900112233445566","k":"4b80724d0ef86bcb2c21f7999d67739d"}]}
 https://dash2.antik.sk/stream/nvidia_eurosport1/playlist_cenc.mpd
-#EXTINF:-1 tvg-id="willow - WILLOW - AQ" tvg-name="willow - WILLOW - AQ" tvg-logo="https://bobgoldpr.com/wp-content/uploads/2025/01/WILLOW_2023_Primary-Stacked.png" group-title="Sports",willow - WILLOW - AQ
+#EXTINF:-1 tvg-id="sporttvnew - Sport TV 1 - AQ" tvg-name="sporttvnew - Sport TV 1 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xLD__y8czmQebpbPk_PrQwAVD1j1bNe0LKr-TqkYk8EhxdK9elpcJrs&s=10" group-title="Sports",sporttvnew - Sport TV 1 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"290e09c837da78d5cd961978d390515c","k":"b748836c71e6a4ca68ef5b5652db6247"}]}
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"11223344556677889900112233445566","k":"4b80724d0ef86bcb2c21f7999d67739d"}]}
+https://dash2.antik.sk/stream/nvidia_sport_1/playlist_cenc.mpd
+#EXTINF:-1 tvg-id="sporttvnew - Sport TV 2 - AQ" tvg-name="sporttvnew - Sport TV 2 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xLD__y8czmQebpbPk_PrQwAVD1j1bNe0LKr-TqkYk8EhxdK9elpcJrs&s=10" group-title="Sports",sporttvnew - Sport TV 2 - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"11223344556677889900112233445566","k":"4b80724d0ef86bcb2c21f7999d67739d"}]}
+https://dash2.antik.sk/stream/nvidia_sport2/playlist_cenc.mpd
 #EXTINF:-1 tvg-id="willow - INDIA IP" tvg-name="willow - INDIA IP" tvg-logo="https://bobgoldpr.com/wp-content/uploads/2025/01/WILLOW_2023_Primary-Stacked.png" group-title="Sports",willow - INDIA IP
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://amg01269-amg01269c1-sportstribal-emea-5204.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01269-willowtvfast-willowplus-sportstribalemea/playlist.m3u8
-#EXTINF:-1 tvg-id="willow - WILLOW EX" tvg-name="willow - WILLOW EX" tvg-logo="https://bobgoldpr.com/wp-content/uploads/2025/01/WILLOW_2023_Primary-Stacked.png" group-title="Sports",willow - WILLOW EX
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-http://27.124.71.27/Willow_Extra/index.m3u8
 #EXTINF:-1 tvg-id="willow - WILLOW - HD" tvg-name="willow - WILLOW - HD" tvg-logo="https://bobgoldpr.com/wp-content/uploads/2025/01/WILLOW_2023_Primary-Stacked.png" group-title="Sports",willow - WILLOW - HD
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"290e09c837da78d5cd961978d390515c","k":"b748836c71e6a4ca68ef5b5652db6247"}]}
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd
-#EXTINF:-1 tvg-id="premiersports - Premier Sports 1 - AQ (2)" tvg-name="premiersports - Premier Sports 1 - AQ (2)" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2N3muMyMzp3uu939QXWUO6cCn_tFRHVE8C7xqEn3Oryc-GW6ZQ9P1OyV8&s=10" group-title="Sports",premiersports - Premier Sports 1 - AQ (2)
+#EXTINF:-1 tvg-id="willow - WILLOW - AQ" tvg-name="willow - WILLOW - AQ" tvg-logo="https://bobgoldpr.com/wp-content/uploads/2025/01/WILLOW_2023_Primary-Stacked.png" group-title="Sports",willow - WILLOW - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"1444f4235529f183f0a5a486befe9cdb","k":"e5e3fec67a1bb3472a2089c8a0a2557f"}]}
-#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
-#EXTINF:-1 tvg-id="premiersports - PREMIER SPORTS 2 - AQ" tvg-name="premiersports - PREMIER SPORTS 2 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2N3muMyMzp3uu939QXWUO6cCn_tFRHVE8C7xqEn3Oryc-GW6ZQ9P1OyV8&s=10" group-title="Sports",premiersports - PREMIER SPORTS 2 - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"1a5df53609ebc9857898c490f4724918","k":"77f62980d582ec541280796acf8b2d19"}]}
-#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
-https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd
-#EXTINF:-1 tvg-id="premiersports - PREMIER SPORTS 1 - AQ" tvg-name="premiersports - PREMIER SPORTS 1 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2N3muMyMzp3uu939QXWUO6cCn_tFRHVE8C7xqEn3Oryc-GW6ZQ9P1OyV8&s=10" group-title="Sports",premiersports - PREMIER SPORTS 1 - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"1444f4235529f183f0a5a486befe9cdb","k":"e5e3fec67a1bb3472a2089c8a0a2557f"}]}
-#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
-https://abfjk4haaaaaaaampv6ofhkihi4r6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/m6sqanvm2m/out/v1/f6beb46c6e9a4132ad739f3ca27df6aa/cenc.mpd
-#EXTINF:-1 tvg-id="premiersports - Premier Sports 2 - AQ (2)" tvg-name="premiersports - Premier Sports 2 - AQ (2)" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2N3muMyMzp3uu939QXWUO6cCn_tFRHVE8C7xqEn3Oryc-GW6ZQ9P1OyV8&s=10" group-title="Sports",premiersports - Premier Sports 2 - AQ (2)
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"1a5df53609ebc9857898c490f4724918","k":"77f62980d582ec541280796acf8b2d19"}]}
-#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/bcj3iscpd6/out/v1/fcd137b391214f7cb99dd4d7be90ca87/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"290e09c837da78d5cd961978d390515c","k":"b748836c71e6a4ca68ef5b5652db6247"}]}
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1/a7f67cbb33df46539312956427343886/cenc.mpd
+#EXTINF:-1 tvg-id="willow - WILLOW EX" tvg-name="willow - WILLOW EX" tvg-logo="https://bobgoldpr.com/wp-content/uploads/2025/01/WILLOW_2023_Primary-Stacked.png" group-title="Sports",willow - WILLOW EX
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+http://27.124.71.27/Willow_Extra/index.m3u8
 #EXTINF:-1 tvg-id="asports pakistan - A SPORTS - HD" tvg-name="asports pakistan - A SPORTS - HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzkAPsj5_azQWwEGkcrJbg5hD_xITmrOKhtQ&usqp=CAU" group-title="Sports",asports pakistan - A SPORTS - HD
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/tracks-v1a1/mono.ts.m3u8
-#EXTINF:-1 tvg-id="skysports - Sky Sports 2 - AQ" tvg-name="skysports - Sky Sports 2 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports 2 - AQ
+#EXTINF:-1 tvg-id="bein sports - beIN Sports 1 - AQ" tvg-name="bein sports - beIN Sports 1 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports 1 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"99909032389c6ee41c3d2f3ec829f804","k":"41fbc575c8ef1cdac1dca990c9a0df9d"}]}
-https://nog-live1-ott.izzigo.tv/13/out/u/dash/SKY-SPORTS-21-HD/default.mpd
-#EXTINF:-1 tvg-id="skysports - Event 4 - AQ" tvg-name="skysports - Event 4 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Event 4 - AQ
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"335dad778109954503dcbb21dc92015f","k":"24bfd75d436cbf73168a2a2dccd40281"}]}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd
+#EXTINF:-1 tvg-id="bein sports - beIN Sports 2 - AQ" tvg-name="bein sports - beIN Sports 2 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports 2 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"a931b2e953695ffb0cfd38573e97ba33","k":"4ddd99cc4fb168d7f0e20be8a3287100"}]}
-https://nog-live1-ott.izzigo.tv/11/out/u/dash/SKY-LIVE-EVENT-4-HD/default.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0b42be2664d7e811d04f3e504e0924c5","k":"ae24090123b8c72ac5404dc152847cb8"}]}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd?
+#EXTINF:-1 tvg-id="bein sports - beIN Sports 3 - AQ" tvg-name="bein sports - beIN Sports 3 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports 3 - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"7995c724a13748ed970840a8ab5bb9b3","k":"67bdaf1e2175b9ff682fcdf0e2354b1e"}]}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd
+#EXTINF:-1 tvg-id="bein sports - beIN Sports 2 AU - AQ" tvg-name="bein sports - beIN Sports 2 AU - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports 2 AU - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0b42be2664d7e811d04f3e504e0924c5","k":"ae24090123b8c72ac5404dc152847cb8"}]}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://otte.live.fly.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd
+#EXTINF:-1 tvg-id="bein sports - beIN Sports Xtra" tvg-name="bein sports - beIN Sports Xtra" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports Xtra
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://amg01334-beinsportsllc-beinxtra-localnow-kcy6r.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="bein sports - beIN Sports 1 AU - AQ" tvg-name="bein sports - beIN Sports 1 AU - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports 1 AU - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"335DAD778109954503DCBB21DC92015F","k":"24bfd75d436cbf73168a2a2dccd40281"}]}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://otte.live.fly.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd
+#EXTINF:-1 tvg-id="skysports - Telenovelas" tvg-name="skysports - Telenovelas" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Telenovelas
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"361d47939a32a35422d13728b7089728","k":"1d26ccbbc3a3b1f3e3f7e4850a54c6f2"}]}
+https://nog-live1-ott.izzigo.tv/15/out/u/dash/TLNOVELAS-HD/default.mpd
+#EXTINF:-1 tvg-id="skysports - Sky Sports Bundesliga - AQ" tvg-name="skysports - Sky Sports Bundesliga - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports Bundesliga - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"d8d5823d92a9ef9306a4cc4bd634b4b4","k":"df9fbdaa0ef9e905b75f4692f213af19"}]}
+https://nog-live1-ott.izzigo.tv/15/out/u/dash/SKY-SPORTS-24-HD/default.mpd
+#EXTINF:-1 tvg-id="skysports - Sky Las Estrellas - AQ" tvg-name="skysports - Sky Las Estrellas - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Las Estrellas - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"62cc24eaedef1ab322a4d52fd6bf29ad","k":"3f80b04b3e2bf3d8543956882da9dd00"}]}
+https://nog-live1-ott.izzigo.tv/11/out/u/dash/CANAL-2-HD/default.mpd
+#EXTINF:-1 tvg-id="skysports - Sky Sports LaLiga - AQ" tvg-name="skysports - Sky Sports LaLiga - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports LaLiga - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"cb80e1e7d7598eaf98b1dbbe6dc14ee9","k":"103ae55c7948ca1d159d6743619d26c4"}]}
+https://nog-live1-ott.izzigo.tv/12/out/u/dash/SKY-SPORTS-16-HD/default.mpd
 #EXTINF:-1 tvg-id="skysports - Event 2 - AQ" tvg-name="skysports - Event 2 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Event 2 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -347,53 +398,71 @@ https://nog-live1-ott.izzigo.tv/15/out/u/dash/SKY-LIVE-EVENT-2-HD/default.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"a3636a51227fa338cdddf5892d8a621c","k":"1444ee3c4d08bf39454b914f797968eb"}]}
 https://nog-live1-ott.izzigo.tv/11/out/u/dash/SKY-LIVE-EVENT-1-HD/default.mpd
-#EXTINF:-1 tvg-id="skysports - Sky Sports Bundesliga - AQ" tvg-name="skysports - Sky Sports Bundesliga - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports Bundesliga - AQ
+#EXTINF:-1 tvg-id="skysports - Sky Sports 2 - AQ" tvg-name="skysports - Sky Sports 2 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports 2 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"d8d5823d92a9ef9306a4cc4bd634b4b4","k":"df9fbdaa0ef9e905b75f4692f213af19"}]}
-https://nog-live1-ott.izzigo.tv/15/out/u/dash/SKY-SPORTS-24-HD/default.mpd
-#EXTINF:-1 tvg-id="skysports - Telenovelas" tvg-name="skysports - Telenovelas" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Telenovelas
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"361d47939a32a35422d13728b7089728","k":"1d26ccbbc3a3b1f3e3f7e4850a54c6f2"}]}
-https://nog-live1-ott.izzigo.tv/15/out/u/dash/TLNOVELAS-HD/default.mpd
-#EXTINF:-1 tvg-id="skysports - Sky Las Estrellas - AQ" tvg-name="skysports - Sky Las Estrellas - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Las Estrellas - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"62cc24eaedef1ab322a4d52fd6bf29ad","k":"3f80b04b3e2bf3d8543956882da9dd00"}]}
-https://nog-live1-ott.izzigo.tv/11/out/u/dash/CANAL-2-HD/default.mpd
-#EXTINF:-1 tvg-id="skysports - Sky Sports 1 - AQ" tvg-name="skysports - Sky Sports 1 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports 1 - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"335511dfdf0d03bc06f1fdead5870b5a","k":"1a022fb33ad3de4d4579b04966551488"}]}
-https://nog-live1-ott.izzigo.tv/13/out/u/dash/SKY-SPORTS-HD/default.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"99909032389c6ee41c3d2f3ec829f804","k":"41fbc575c8ef1cdac1dca990c9a0df9d"}]}
+https://nog-live1-ott.izzigo.tv/13/out/u/dash/SKY-SPORTS-21-HD/default.mpd
 #EXTINF:-1 tvg-id="skysports - Event 5 - AQ" tvg-name="skysports - Event 5 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Event 5 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"6c89e84c52eae0428b7d2c8e887a48ec","k":"758a1484f920a0f1aa73e95d5f2be225"}]}
 https://nog-live1-ott.izzigo.tv/12/out/u/dash/SKY-LIVE-EVENT-5-HD/default.mpd
-#EXTINF:-1 tvg-id="skysports - Sky Sports LaLiga - AQ" tvg-name="skysports - Sky Sports LaLiga - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports LaLiga - AQ
+#EXTINF:-1 tvg-id="skysports - Event 4 - AQ" tvg-name="skysports - Event 4 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Event 4 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"cb80e1e7d7598eaf98b1dbbe6dc14ee9","k":"103ae55c7948ca1d159d6743619d26c4"}]}
-https://nog-live1-ott.izzigo.tv/12/out/u/dash/SKY-SPORTS-16-HD/default.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"a931b2e953695ffb0cfd38573e97ba33","k":"4ddd99cc4fb168d7f0e20be8a3287100"}]}
+https://nog-live1-ott.izzigo.tv/11/out/u/dash/SKY-LIVE-EVENT-4-HD/default.mpd
+#EXTINF:-1 tvg-id="skysports - Sky Sports 1 - AQ" tvg-name="skysports - Sky Sports 1 - AQ" tvg-logo="https://logodownload.org/wp-content/uploads/2020/06/sky-sports-logo-0-1.png" group-title="Sports",skysports - Sky Sports 1 - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"335511dfdf0d03bc06f1fdead5870b5a","k":"1a022fb33ad3de4d4579b04966551488"}]}
+https://nog-live1-ott.izzigo.tv/13/out/u/dash/SKY-SPORTS-HD/default.mpd
 #EXTINF:-1 tvg-id="sport italia - Link 1" tvg-name="sport italia - Link 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWyV9OQV_28V8ysYAUzjJpoMz3oWLWPfq9WEjCaf4VOltGDzWp-IsJ2lo&s=10" group-title="Sports",sport italia - Link 1
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 https://africa24.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
-#EXTINF:-1 tvg-id="cazetv - Cazé TV - AQ (Event 2)" tvg-name="cazetv - Cazé TV - AQ (Event 2)" tvg-logo="https://logodownload.org/wp-content/uploads/2024/03/cazetv-logo-0.png" group-title="Sports",cazetv - Cazé TV - AQ (Event 2)
+#EXTINF:-1 tvg-id="sportvv - SporTV - AQ1" tvg-name="sportvv - SporTV - AQ1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTltVnHcIu9cwJ-3vCYSqjy0j4PrS6gB1OgGPmfxwQbEg&s=10" group-title="Sports",sportvv - SporTV - AQ1
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"ac7abaa9c9481aacfbdac64fc3ec3312","k":"c0c504a2ed2e70b879a650b8770a38c6"}]}
-#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/vzeco5ty0v/out/v1/44c6b8f31a2544e3b2a9bb41ed5e241e/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"51c0ef23b17297e5c01cd7f36dd0a6ce","k":"8823f713ba6fdb9bbe0a2ad82d309a4b"}]}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w8kwdfmlgs/out/v1/3aa321e477504937a439b602e078eb18/cenc.mpd?
+#EXTINF:-1 tvg-id="foxsports - FOX SPORTS 2" tvg-name="foxsports - FOX SPORTS 2" tvg-logo="https://b.fssta.com/uploads/application/fscom/SiteShareImage.vresize.1200.630.high.0.png" group-title="Sports",foxsports - FOX SPORTS 2
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"d1a163914db8ffad2c3e94f979896a0d","k":"9728800a3959aafdd5b0bcfbf3768811"}]}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/vkpoljjpkj/out/v1/502bcf68b3514cd28a220e6f0a43816f/cenc.mpd
+#EXTINF:-1 tvg-id="foxsports - FOX SPORTS 1" tvg-name="foxsports - FOX SPORTS 1" tvg-logo="https://b.fssta.com/uploads/application/fscom/SiteShareImage.vresize.1200.630.high.0.png" group-title="Sports",foxsports - FOX SPORTS 1
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"5466ebd70704bdeb657f0abf3c5ca4ef","k":"bdd79b72d8e48ed483aa623cc38a8a16"}]}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/fsu3wl2rwb/out/v1/be61206c04e643349d53fb22301f3b50/cenc.mpd
+#EXTINF:-1 tvg-id="foxsports - HD1" tvg-name="foxsports - HD1" tvg-logo="https://b.fssta.com/uploads/application/fscom/SiteShareImage.vresize.1200.630.high.0.png" group-title="Sports",foxsports - HD1
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+https://d1jzu95oc8fgt3.cloudfront.net/FOX_Sports720p.m3u8
+#EXTINF:-1 tvg-id="foxsports - FOX SPORTS 3" tvg-name="foxsports - FOX SPORTS 3" tvg-logo="https://b.fssta.com/uploads/application/fscom/SiteShareImage.vresize.1200.630.high.0.png" group-title="Sports",foxsports - FOX SPORTS 3
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"09453ce820d65fbc675de3185f9e454c","k":"98cff9600995fa381c76fdacf3c7edae"}]}
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd
+#EXTINF:-1 tvg-id="foxsports - FOX SPORTS 4" tvg-name="foxsports - FOX SPORTS 4" tvg-logo="https://b.fssta.com/uploads/application/fscom/SiteShareImage.vresize.1200.630.high.0.png" group-title="Sports",foxsports - FOX SPORTS 4
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"482d41282412c2a36faae9c15d42b462","k":"88e6ef62e9cfb3dd7f28686844b7cee2"}]}
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/xr97sgrflz/out/v1/e4a043f7cbcf4d308e7c5439c320c8aa/cenc.mpd
 #EXTINF:-1 tvg-id="cazetv - Cazé TV - AQ (Event 1)" tvg-name="cazetv - Cazé TV - AQ (Event 1)" tvg-logo="https://logodownload.org/wp-content/uploads/2024/03/cazetv-logo-0.png" group-title="Sports",cazetv - Cazé TV - AQ (Event 1)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -408,72 +477,13 @@ https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/3ynrpdanq2/out/v1
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"1223d5105392cabf1bb9c2c1fdf6539a","k":"340b409f4b8f78a343e0363a7938df38"}]}
 #EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
 https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/iayg0kyrof/out/v1/91dc04907f56415b897faccfa9d252da/cenc.mpd
-#EXTINF:-1 tvg-id="bein sports - beIN Sports 2 - AQ" tvg-name="bein sports - beIN Sports 2 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports 2 - AQ
+#EXTINF:-1 tvg-id="cazetv - Cazé TV - AQ (Event 2)" tvg-name="cazetv - Cazé TV - AQ (Event 2)" tvg-logo="https://logodownload.org/wp-content/uploads/2024/03/cazetv-logo-0.png" group-title="Sports",cazetv - Cazé TV - AQ (Event 2)
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0b42be2664d7e811d04f3e504e0924c5","k":"ae24090123b8c72ac5404dc152847cb8"}]}
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd?
-#EXTINF:-1 tvg-id="bein sports - beIN Sports 1 AU - AQ" tvg-name="bein sports - beIN Sports 1 AU - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports 1 AU - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"335DAD778109954503DCBB21DC92015F","k":"24bfd75d436cbf73168a2a2dccd40281"}]}
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.live.fly.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd
-#EXTINF:-1 tvg-id="bein sports - beIN Sports 1 - AQ" tvg-name="bein sports - beIN Sports 1 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports 1 - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"335dad778109954503dcbb21dc92015f","k":"24bfd75d436cbf73168a2a2dccd40281"}]}
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd
-#EXTINF:-1 tvg-id="bein sports - beIN Sports 3 - AQ" tvg-name="bein sports - beIN Sports 3 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports 3 - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"7995c724a13748ed970840a8ab5bb9b3","k":"67bdaf1e2175b9ff682fcdf0e2354b1e"}]}
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd
-#EXTINF:-1 tvg-id="bein sports - beIN Sports Xtra" tvg-name="bein sports - beIN Sports Xtra" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports Xtra
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://amg01334-beinsportsllc-beinxtra-localnow-kcy6r.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="bein sports - beIN Sports 2 AU - AQ" tvg-name="bein sports - beIN Sports 2 AU - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfiv5GlXKB0RXEbIF6V-zWRWxE76XfrsuiiA&usqp=CAU" group-title="Sports",bein sports - beIN Sports 2 AU - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"0b42be2664d7e811d04f3e504e0924c5","k":"ae24090123b8c72ac5404dc152847cb8"}]}
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.live.fly.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd
-#EXTINF:-1 tvg-id="tntsports1 - TNT 1 - AQ" tvg-name="tntsports1 - TNT 1 - AQ" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqApl_EnWGZbS_9Mdee7V9v7Q_xyVBankZg32YNQxAEKLT1KWGz7f9AZzS-1ZDMKxt6etxxBc5IflQQ5qfUJOIpRHw47kxDKa1-_ntu2BnuFP__9gw5dQ7fB29s68MebvY8LB3ZGZBsXQLZ97iyZtGlBh8JPSlRFuRPyYKRHLMghBhAFNiZomwAxVJFT6p/s320/TNT_SPORTS_LOGO_ICON_JPG_PNG.png" group-title="Sports",tntsports1 - TNT 1 - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"69a5aa835a061ce64a630d1046727e40","k":"d02feac8a999bd06bf4059bf33411749"}]}
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd
-#EXTINF:-1 tvg-id="tntsports1 - TNT 3 - AQ" tvg-name="tntsports1 - TNT 3 - AQ" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqApl_EnWGZbS_9Mdee7V9v7Q_xyVBankZg32YNQxAEKLT1KWGz7f9AZzS-1ZDMKxt6etxxBc5IflQQ5qfUJOIpRHw47kxDKa1-_ntu2BnuFP__9gw5dQ7fB29s68MebvY8LB3ZGZBsXQLZ97iyZtGlBh8JPSlRFuRPyYKRHLMghBhAFNiZomwAxVJFT6p/s320/TNT_SPORTS_LOGO_ICON_JPG_PNG.png" group-title="Sports",tntsports1 - TNT 3 - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"cc91508324ce9dcaf425a43d58f1d9d4","k":"643e5474d9edd87c7d9091c8c97994ca"}]}
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd
-#EXTINF:-1 tvg-id="tntsports1 - TNT 4 - AQ" tvg-name="tntsports1 - TNT 4 - AQ" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqApl_EnWGZbS_9Mdee7V9v7Q_xyVBankZg32YNQxAEKLT1KWGz7f9AZzS-1ZDMKxt6etxxBc5IflQQ5qfUJOIpRHw47kxDKa1-_ntu2BnuFP__9gw5dQ7fB29s68MebvY8LB3ZGZBsXQLZ97iyZtGlBh8JPSlRFuRPyYKRHLMghBhAFNiZomwAxVJFT6p/s320/TNT_SPORTS_LOGO_ICON_JPG_PNG.png" group-title="Sports",tntsports1 - TNT 4 - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"fa34fa8c90336dd528c7a23871cad1fe","k":"552a78d1aeb74f1650d68255c5749408"}]}
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd
-#EXTINF:-1 tvg-id="tntsports1 - TNT MX - AQ" tvg-name="tntsports1 - TNT MX - AQ" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqApl_EnWGZbS_9Mdee7V9v7Q_xyVBankZg32YNQxAEKLT1KWGz7f9AZzS-1ZDMKxt6etxxBc5IflQQ5qfUJOIpRHw47kxDKa1-_ntu2BnuFP__9gw5dQ7fB29s68MebvY8LB3ZGZBsXQLZ97iyZtGlBh8JPSlRFuRPyYKRHLMghBhAFNiZomwAxVJFT6p/s320/TNT_SPORTS_LOGO_ICON_JPG_PNG.png" group-title="Sports",tntsports1 - TNT MX - AQ
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"37971d47c9e64d7584058efcfdc424b3","k":"9944ecda48ef3d6325ccf89ab32bef83"}]}
-https://nog-live1-ott.izzigo.tv/6/out/u/dash/TNT-HD-H265/default.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"ac7abaa9c9481aacfbdac64fc3ec3312","k":"c0c504a2ed2e70b879a650b8770a38c6"}]}
+#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/vzeco5ty0v/out/v1/44c6b8f31a2544e3b2a9bb41ed5e241e/cenc.mpd
 #EXTINF:-1 tvg-id="tntsports1 - TNT 2 - AQ" tvg-name="tntsports1 - TNT 2 - AQ" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqApl_EnWGZbS_9Mdee7V9v7Q_xyVBankZg32YNQxAEKLT1KWGz7f9AZzS-1ZDMKxt6etxxBc5IflQQ5qfUJOIpRHw47kxDKa1-_ntu2BnuFP__9gw5dQ7fB29s68MebvY8LB3ZGZBsXQLZ97iyZtGlBh8JPSlRFuRPyYKRHLMghBhAFNiZomwAxVJFT6p/s320/TNT_SPORTS_LOGO_ICON_JPG_PNG.png" group-title="Sports",tntsports1 - TNT 2 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -481,43 +491,33 @@ https://nog-live1-ott.izzigo.tv/6/out/u/dash/TNT-HD-H265/default.mpd
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"f3df7843080ae743bf865dc5fdf64c68","k":"567c863bc12eb74788ea74888c042e1b"}]}
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd
-#EXTINF:-1 tvg-id="foxsports - FOX SPORTS 2" tvg-name="foxsports - FOX SPORTS 2" tvg-logo="https://b.fssta.com/uploads/application/fscom/SiteShareImage.vresize.1200.630.high.0.png" group-title="Sports",foxsports - FOX SPORTS 2
+#EXTINF:-1 tvg-id="tntsports1 - TNT 3 - AQ" tvg-name="tntsports1 - TNT 3 - AQ" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqApl_EnWGZbS_9Mdee7V9v7Q_xyVBankZg32YNQxAEKLT1KWGz7f9AZzS-1ZDMKxt6etxxBc5IflQQ5qfUJOIpRHw47kxDKa1-_ntu2BnuFP__9gw5dQ7fB29s68MebvY8LB3ZGZBsXQLZ97iyZtGlBh8JPSlRFuRPyYKRHLMghBhAFNiZomwAxVJFT6p/s320/TNT_SPORTS_LOGO_ICON_JPG_PNG.png" group-title="Sports",tntsports1 - TNT 3 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"d1a163914db8ffad2c3e94f979896a0d","k":"9728800a3959aafdd5b0bcfbf3768811"}]}
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"cc91508324ce9dcaf425a43d58f1d9d4","k":"643e5474d9edd87c7d9091c8c97994ca"}]}
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/vkpoljjpkj/out/v1/502bcf68b3514cd28a220e6f0a43816f/cenc.mpd
-#EXTINF:-1 tvg-id="foxsports - HD1" tvg-name="foxsports - HD1" tvg-logo="https://b.fssta.com/uploads/application/fscom/SiteShareImage.vresize.1200.630.high.0.png" group-title="Sports",foxsports - HD1
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-https://d1jzu95oc8fgt3.cloudfront.net/FOX_Sports720p.m3u8
-#EXTINF:-1 tvg-id="foxsports - FOX SPORTS 1" tvg-name="foxsports - FOX SPORTS 1" tvg-logo="https://b.fssta.com/uploads/application/fscom/SiteShareImage.vresize.1200.630.high.0.png" group-title="Sports",foxsports - FOX SPORTS 1
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/dev1hjwzh9/out/v1/a5f0ee7ad7b24906b14f43bebbbe4678/cenc.mpd
+#EXTINF:-1 tvg-id="tntsports1 - TNT 1 - AQ" tvg-name="tntsports1 - TNT 1 - AQ" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqApl_EnWGZbS_9Mdee7V9v7Q_xyVBankZg32YNQxAEKLT1KWGz7f9AZzS-1ZDMKxt6etxxBc5IflQQ5qfUJOIpRHw47kxDKa1-_ntu2BnuFP__9gw5dQ7fB29s68MebvY8LB3ZGZBsXQLZ97iyZtGlBh8JPSlRFuRPyYKRHLMghBhAFNiZomwAxVJFT6p/s320/TNT_SPORTS_LOGO_ICON_JPG_PNG.png" group-title="Sports",tntsports1 - TNT 1 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"5466ebd70704bdeb657f0abf3c5ca4ef","k":"bdd79b72d8e48ed483aa623cc38a8a16"}]}
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"69a5aa835a061ce64a630d1046727e40","k":"d02feac8a999bd06bf4059bf33411749"}]}
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/fsu3wl2rwb/out/v1/be61206c04e643349d53fb22301f3b50/cenc.mpd
-#EXTINF:-1 tvg-id="foxsports - FOX SPORTS 3" tvg-name="foxsports - FOX SPORTS 3" tvg-logo="https://b.fssta.com/uploads/application/fscom/SiteShareImage.vresize.1200.630.high.0.png" group-title="Sports",foxsports - FOX SPORTS 3
+https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd
+#EXTINF:-1 tvg-id="tntsports1 - TNT MX - AQ" tvg-name="tntsports1 - TNT MX - AQ" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqApl_EnWGZbS_9Mdee7V9v7Q_xyVBankZg32YNQxAEKLT1KWGz7f9AZzS-1ZDMKxt6etxxBc5IflQQ5qfUJOIpRHw47kxDKa1-_ntu2BnuFP__9gw5dQ7fB29s68MebvY8LB3ZGZBsXQLZ97iyZtGlBh8JPSlRFuRPyYKRHLMghBhAFNiZomwAxVJFT6p/s320/TNT_SPORTS_LOGO_ICON_JPG_PNG.png" group-title="Sports",tntsports1 - TNT MX - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"09453ce820d65fbc675de3185f9e454c","k":"98cff9600995fa381c76fdacf3c7edae"}]}
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd
-#EXTINF:-1 tvg-id="foxsports - FOX SPORTS 4" tvg-name="foxsports - FOX SPORTS 4" tvg-logo="https://b.fssta.com/uploads/application/fscom/SiteShareImage.vresize.1200.630.high.0.png" group-title="Sports",foxsports - FOX SPORTS 4
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"37971d47c9e64d7584058efcfdc424b3","k":"9944ecda48ef3d6325ccf89ab32bef83"}]}
+https://nog-live1-ott.izzigo.tv/6/out/u/dash/TNT-HD-H265/default.mpd
+#EXTINF:-1 tvg-id="tntsports1 - TNT 4 - AQ" tvg-name="tntsports1 - TNT 4 - AQ" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqApl_EnWGZbS_9Mdee7V9v7Q_xyVBankZg32YNQxAEKLT1KWGz7f9AZzS-1ZDMKxt6etxxBc5IflQQ5qfUJOIpRHw47kxDKa1-_ntu2BnuFP__9gw5dQ7fB29s68MebvY8LB3ZGZBsXQLZ97iyZtGlBh8JPSlRFuRPyYKRHLMghBhAFNiZomwAxVJFT6p/s320/TNT_SPORTS_LOGO_ICON_JPG_PNG.png" group-title="Sports",tntsports1 - TNT 4 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"482d41282412c2a36faae9c15d42b462","k":"88e6ef62e9cfb3dd7f28686844b7cee2"}]}
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/xr97sgrflz/out/v1/e4a043f7cbcf4d308e7c5439c320c8aa/cenc.mpd
-#EXTINF:-1 tvg-id="formula - F1" tvg-name="formula - F1" tvg-logo="https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-0.png" group-title="Sports",formula - F1
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"609d795905904705028ef54653019af7","k":"2c791eb611e57a7d7f203022bc1b9ba3"}]}
-#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/duqbirmk0d/out/v1/40f53c7cbc95498db3afd081c377d776/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"fa34fa8c90336dd528c7a23871cad1fe","k":"552a78d1aeb74f1650d68255c5749408"}]}
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tdijwiga2k/out/v1/f5fde318678f4f7583bf27b7231bde1f/cenc.mpd
 #EXTINF:-1 tvg-id="fancode  - FANCODE 1 - HD" tvg-name="fancode  - FANCODE 1 - HD" tvg-logo="https://static.timesprime.com/2x/fancodeaprilnew-logo-box.png" group-title="Sports",fancode  - FANCODE 1 - HD
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -539,12 +539,12 @@ https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/tll6uwepxa/out/v1
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"1994b1df7dfd2e8a8d7b9bf3fb900285","k":"22a1444b3da18e139191665b3d652835"}]}
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 https://otte.live.fly.ww.aiv-cdn.net/bom-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd
-#EXTINF:-1 tvg-id="fancode  - FC 1 - AQ" tvg-name="fancode  - FC 1 - AQ" tvg-logo="https://static.timesprime.com/2x/fancodeaprilnew-logo-box.png" group-title="Sports",fancode  - FC 1 - AQ
+#EXTINF:-1 tvg-id="fancode  - FC 2 - AQ" tvg-name="fancode  - FC 2 - AQ" tvg-logo="https://static.timesprime.com/2x/fancodeaprilnew-logo-box.png" group-title="Sports",fancode  - FC 2 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"286eb7dc538143790fa9913639531920","k":"e3f5cb08d14d9e9c08438c673819540f"}]}
-https://abjqoehaaaaaaaamlzr65eai5t3fs.ta.bia-cf.live.pv-cdn.net/bom-nitro/live/clients/dash-sd/enc/iwpchve3wl/out/v1/946019f85dc64ae99ff9ce64a9727a62/cenc-sd.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"5318e462b9e0677487cb87837f0bbdb1","k":"4fa0fb973b95738306005f2e8591bf8e"}]}
+https://live-pv-ta.amazon.fastly-edge.com/bom-nitro/live/clients/dash-sd/enc/eayjamsonn/out/v1/6c25cddab58043a6ace0ac64d97983f0/cenc-sd.mpd
 #EXTINF:-1 tvg-id="fancode  - FC 1 - HD" tvg-name="fancode  - FC 1 - HD" tvg-logo="https://static.timesprime.com/2x/fancodeaprilnew-logo-box.png" group-title="Sports",fancode  - FC 1 - HD
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -552,25 +552,29 @@ https://abjqoehaaaaaaaamlzr65eai5t3fs.ta.bia-cf.live.pv-cdn.net/bom-nitro/live/c
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"82dfca238e8c4b430a3269db71965db9","k":"a00b28caf4ac628e77a553d440c0ddca"}]}
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 https://ABGPU4GAAAAAAAAME77EHQQ2GEEW7.ta.bia-cf.live.pv-cdn.net/bom-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd
-#EXTINF:-1 tvg-id="fancode  - FC 2 - AQ" tvg-name="fancode  - FC 2 - AQ" tvg-logo="https://static.timesprime.com/2x/fancodeaprilnew-logo-box.png" group-title="Sports",fancode  - FC 2 - AQ
+#EXTINF:-1 tvg-id="fancode  - FC 1 - AQ" tvg-name="fancode  - FC 1 - AQ" tvg-logo="https://static.timesprime.com/2x/fancodeaprilnew-logo-box.png" group-title="Sports",fancode  - FC 1 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"5318e462b9e0677487cb87837f0bbdb1","k":"4fa0fb973b95738306005f2e8591bf8e"}]}
-https://live-pv-ta.amazon.fastly-edge.com/bom-nitro/live/clients/dash-sd/enc/eayjamsonn/out/v1/6c25cddab58043a6ace0ac64d97983f0/cenc-sd.mpd
-#EXTINF:-1 tvg-id="tudn - Server 1" tvg-name="tudn - Server 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2D5wfRZOhKgkyVL1xVJHRlDarNcwqbP34wsg6qNmVrF4z_U_71ApixmM&s=10" group-title="Sports",tudn - Server 1
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"286eb7dc538143790fa9913639531920","k":"e3f5cb08d14d9e9c08438c673819540f"}]}
+https://abjqoehaaaaaaaamlzr65eai5t3fs.ta.bia-cf.live.pv-cdn.net/bom-nitro/live/clients/dash-sd/enc/iwpchve3wl/out/v1/946019f85dc64ae99ff9ce64a9727a62/cenc-sd.mpd
+#EXTINF:-1 tvg-id="nba - NBA - AQ" tvg-name="nba - NBA - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0rNeWINAiPG9XqsYSMKDkkjt5snpJqcSP_A&usqp=CAU" group-title="Sports",nba - NBA - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"763ce1ebcaf23502c8cf357c6ef423e1","k":"0c5e6c0820a1ea28753721db00272411"}]}
-https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/o2vy4aahsh/out/v1/e293c932745a44dcaf897573dfc53532/cenc.mpd
-#EXTINF:-1 tvg-id="sportvv - SporTV - AQ1" tvg-name="sportvv - SporTV - AQ1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTltVnHcIu9cwJ-3vCYSqjy0j4PrS6gB1OgGPmfxwQbEg&s=10" group-title="Sports",sportvv - SporTV - AQ1
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"84077d18bcf234a42de3745be106a87f","k":"aee3069c062ec8ee6bfdd32985f287ef"}]}
+https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/2jbycgm3g3/out/v1/066dd9325648468c9ecdc8b272370931/cenc.mpd
+#EXTINF:-1 tvg-id="nba - MLB - HD" tvg-name="nba - MLB - HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0rNeWINAiPG9XqsYSMKDkkjt5snpJqcSP_A&usqp=CAU" group-title="Sports",nba - MLB - HD
+#KODIPROP:inputstream=inputstream.ffmpeg
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+http://23.237.104.106:8080/USA_SEC_NETWORK/index.m3u8?
+#EXTINF:-1 tvg-id="formula - F1" tvg-name="formula - F1" tvg-logo="https://logodownload.org/wp-content/uploads/2016/11/formula-1-logo-0.png" group-title="Sports",formula - F1
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"51c0ef23b17297e5c01cd7f36dd0a6ce","k":"8823f713ba6fdb9bbe0a2ad82d309a4b"}]}
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w8kwdfmlgs/out/v1/3aa321e477504937a439b602e078eb18/cenc.mpd?
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"609d795905904705028ef54653019af7","k":"2c791eb611e57a7d7f203022bc1b9ba3"}]}
+#EXTVLCOPT:http-origin=https://amazon.com&user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/duqbirmk0d/out/v1/40f53c7cbc95498db3afd081c377d776/cenc.mpd
 #EXTINF:-1 tvg-id="laliga - FANCODE FHD" tvg-name="laliga - FANCODE FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTovv-3DQ2jDflO0eFPtCiY8OcgwUkGn3XkQw&usqp=CAU" group-title="Sports",laliga - FANCODE FHD
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -584,70 +588,60 @@ https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"34475edab991ad5e92548aebd710410a","k":"501b209cccd323ac00bf5ac15b406cb4"}]}
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/3ynrpdanq2/out/v1/81fd4c26584044d2b1a1cc5b32fa9af0/cenc.mpd?
-#EXTINF:-1 tvg-id="laliga - SKY LaLiga FHD" tvg-name="laliga - SKY LaLiga FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTovv-3DQ2jDflO0eFPtCiY8OcgwUkGn3XkQw&usqp=CAU" group-title="Sports",laliga - SKY LaLiga FHD
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"cb80e1e7d7598eaf98b1dbbe6dc14ee9","k":"103ae55c7948ca1d159d6743619d26c4"}]}
-https://nog-live1-ott.izzigo.tv/12/out/u/dash/SKY-SPORTS-16-HD/default.mpd
-#EXTINF:-1 tvg-id="laliga - LALIGA1 HYP FHD" tvg-name="laliga - LALIGA1 HYP FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTovv-3DQ2jDflO0eFPtCiY8OcgwUkGn3XkQw&usqp=CAU" group-title="Sports",laliga - LALIGA1 HYP FHD
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"a88617e904504ee291f49f0e60a51d49","k":"17f92d59fde3b6d2bf4ffb48e8ca720a"}]}
-https://cache07.zapitv.com/live/eds_c2/HYPERMOTION1/dash_live_ez/HYPERMOTION1.mpd
 #EXTINF:-1 tvg-id="laliga - LaLiga2 Hyp FHD" tvg-name="laliga - LaLiga2 Hyp FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTovv-3DQ2jDflO0eFPtCiY8OcgwUkGn3XkQw&usqp=CAU" group-title="Sports",laliga - LaLiga2 Hyp FHD
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"5fc8da8b94c447468ffe392157f8c75e","k":"333b934fdde4c1ee87e7f1c5dac4cb8f"}]}
 https://cache07.zapitv.com/live/eds_c2/HYPERMOTION2/dash_live_ez/HYPERMOTION2.mpd
-#EXTINF:-1 tvg-id="nba - NBA - AQ" tvg-name="nba - NBA - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0rNeWINAiPG9XqsYSMKDkkjt5snpJqcSP_A&usqp=CAU" group-title="Sports",nba - NBA - AQ
+#EXTINF:-1 tvg-id="laliga - LALIGA1 HYP FHD" tvg-name="laliga - LALIGA1 HYP FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTovv-3DQ2jDflO0eFPtCiY8OcgwUkGn3XkQw&usqp=CAU" group-title="Sports",laliga - LALIGA1 HYP FHD
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"84077d18bcf234a42de3745be106a87f","k":"aee3069c062ec8ee6bfdd32985f287ef"}]}
-https://otte.live.fly.ww.aiv-cdn.net/dub-nitro/live/clients/dash/enc/2jbycgm3g3/out/v1/066dd9325648468c9ecdc8b272370931/cenc.mpd
-#EXTINF:-1 tvg-id="nba - MLB - HD" tvg-name="nba - MLB - HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0rNeWINAiPG9XqsYSMKDkkjt5snpJqcSP_A&usqp=CAU" group-title="Sports",nba - MLB - HD
-#KODIPROP:inputstream=inputstream.ffmpeg
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-http://23.237.104.106:8080/USA_SEC_NETWORK/index.m3u8?
-#EXTINF:-1 tvg-id="RYZ SPORTS - RYZ SPORTS" tvg-name="RYZ SPORTS - RYZ SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSakM7ddYnQMdwDx6VyVC7q7s95BhEENSCaidULebQm6pIjf5Sz7GdJjFsi&s=10" group-title="Sports",RYZ SPORTS - RYZ SPORTS
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"a88617e904504ee291f49f0e60a51d49","k":"17f92d59fde3b6d2bf4ffb48e8ca720a"}]}
+https://cache07.zapitv.com/live/eds_c2/HYPERMOTION1/dash_live_ez/HYPERMOTION1.mpd
+#EXTINF:-1 tvg-id="laliga - SKY LaLiga FHD" tvg-name="laliga - SKY LaLiga FHD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTovv-3DQ2jDflO0eFPtCiY8OcgwUkGn3XkQw&usqp=CAU" group-title="Sports",laliga - SKY LaLiga FHD
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"6670dbc6eb97a1c7fc6395d952fb00b7","k":"72a3574c534811db5a4804695a184221"}]}
-https://dash-ott.bia-cf.live.pv-cdn.net/pdx-nitro/live/clients/dash/enc/nl9acyq8n3/out/v1/5dc4b6dd4c094ccb8c3c92e03e87cda7/cenc.mpd
-#EXTINF:-1 tvg-id="cbssports - CBS Station Broadcasting" tvg-name="cbssports - CBS Station Broadcasting" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR63bHRzvR7xOj4g8esQHC-V1fIZD2yJfnXVw&usqp=CAU" group-title="Sports",cbssports - CBS Station Broadcasting
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"cb80e1e7d7598eaf98b1dbbe6dc14ee9","k":"103ae55c7948ca1d159d6743619d26c4"}]}
+https://nog-live1-ott.izzigo.tv/12/out/u/dash/SKY-SPORTS-16-HD/default.mpd
+#EXTINF:-1 tvg-id="tudn - Server 1" tvg-name="tudn - Server 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2D5wfRZOhKgkyVL1xVJHRlDarNcwqbP34wsg6qNmVrF4z_U_71ApixmM&s=10" group-title="Sports",tudn - Server 1
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"780cb0938d1399fa631bd6c0b868e560","k":"f8529525ed53f542de966ad548c59f9c"}]}
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/p04avr57rr/out/v1/25ec3c73680045ce86858d701763a70c/cenc.mpd
-#EXTINF:-1 tvg-id="cbssports - CBS NETWORK" tvg-name="cbssports - CBS NETWORK" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR63bHRzvR7xOj4g8esQHC-V1fIZD2yJfnXVw&usqp=CAU" group-title="Sports",cbssports - CBS NETWORK
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"d9623774ac5c8c351aafe97c5fe70267","k":"5164e6d05164a2d65fa8fcc962aa4861"}]}
-https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/5qz8wmdome/out/v1/b9323e853dce427eac214b77bd48a204/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"763ce1ebcaf23502c8cf357c6ef423e1","k":"0c5e6c0820a1ea28753721db00272411"}]}
+https://otte.cache.aiv-cdn.net/gru-nitro/live/clients/dash/enc/o2vy4aahsh/out/v1/e293c932745a44dcaf897573dfc53532/cenc.mpd
 #EXTINF:-1 tvg-id="cbssports - CBS Golazo" tvg-name="cbssports - CBS Golazo" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR63bHRzvR7xOj4g8esQHC-V1fIZD2yJfnXVw&usqp=CAU" group-title="Sports",cbssports - CBS Golazo
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"d9623774ac5c8c351aafe97c5fe70267","k":"5164e6d05164a2d65fa8fcc962aa4861"}]}
 https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/rbem8rorcw/out/v1/5318821e2c3c44c2a439681b9aa86e9b/cenc.mpd
-#EXTINF:-1 tvg-id="spotv - SPOTV 2 - AQ" tvg-name="spotv - SPOTV 2 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcAvS_KXw1DaXbDM7VZHVhL95gfuIbDNk1Ww&usqp=CAU" group-title="Sports",spotv - SPOTV 2 - AQ
+#EXTINF:-1 tvg-id="cbssports - CBS NETWORK" tvg-name="cbssports - CBS NETWORK" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR63bHRzvR7xOj4g8esQHC-V1fIZD2yJfnXVw&usqp=CAU" group-title="Sports",cbssports - CBS NETWORK
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"7eea72d6075245a99ee3255603d58853","k":"6848ef60575579bf4d415db1032153ed"}]}
-https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_spotv2hd.mpd
-#EXTINF:-1 tvg-id="spotv - SPOTV 1 - AQ" tvg-name="spotv - SPOTV 1 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcAvS_KXw1DaXbDM7VZHVhL95gfuIbDNk1Ww&usqp=CAU" group-title="Sports",spotv - SPOTV 1 - AQ
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"d9623774ac5c8c351aafe97c5fe70267","k":"5164e6d05164a2d65fa8fcc962aa4861"}]}
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/5qz8wmdome/out/v1/b9323e853dce427eac214b77bd48a204/cenc.mpd
+#EXTINF:-1 tvg-id="cbssports - CBS Station Broadcasting" tvg-name="cbssports - CBS Station Broadcasting" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR63bHRzvR7xOj4g8esQHC-V1fIZD2yJfnXVw&usqp=CAU" group-title="Sports",cbssports - CBS Station Broadcasting
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"ec7ee27d83764e4b845c48cca31c8eef","k":"9c0e4191203fccb0fde34ee29999129e"}]}
-https://qp-pldt-live-grp-11-prod.akamaized.net/out/u/dr_spotvhd.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"780cb0938d1399fa631bd6c0b868e560","k":"f8529525ed53f542de966ad548c59f9c"}]}
+https://a151aivottlinear-a.akamaihd.net/OTTB/sin-nitro/live/dash/enc/p04avr57rr/out/v1/25ec3c73680045ce86858d701763a70c/cenc.mpd
+#EXTINF:-1 tvg-id="RYZ SPORTS - RYZ SPORTS" tvg-name="RYZ SPORTS - RYZ SPORTS" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSakM7ddYnQMdwDx6VyVC7q7s95BhEENSCaidULebQm6pIjf5Sz7GdJjFsi&s=10" group-title="Sports",RYZ SPORTS - RYZ SPORTS
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"6670dbc6eb97a1c7fc6395d952fb00b7","k":"72a3574c534811db5a4804695a184221"}]}
+https://dash-ott.bia-cf.live.pv-cdn.net/pdx-nitro/live/clients/dash/enc/nl9acyq8n3/out/v1/5dc4b6dd4c094ccb8c3c92e03e87cda7/cenc.mpd
+#EXTINF:-1 tvg-id="dsports - D SPORTS +" tvg-name="dsports - D SPORTS +" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr_ybe7yeyqYflqnQ1P7vhC0yQ73qbou0xVKQHha0HTdwMDhfL9kWyTjKn&s=10" group-title="Sports",dsports - D SPORTS +
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"83f81c4cc1443991543de4e22eea7586","k":"ddfd7ca653d6f35543d8edb3c688e20f"}]}
+https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/ud6bnhthpj/out/v1/2639a2f4480f4269953de466d5f46463/cenc.mpd
 #EXTINF:-1 tvg-id="dsports -  D SPORTS 1" tvg-name="dsports -  D SPORTS 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr_ybe7yeyqYflqnQ1P7vhC0yQ73qbou0xVKQHha0HTdwMDhfL9kWyTjKn&s=10" group-title="Sports",dsports -  D SPORTS 1
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -661,12 +655,12 @@ https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/z5oyxzsxdk/out/v1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"03f12d6a3dbfd3a6fa7dd7f6417e0c11","k":"ea07b87acdf2e45be824cde4a1cf3504"}]}
 https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rgilyeubta/out/v1/09a67027b18f4fd78aaa3794a2aacfe8/cenc.mpd
-#EXTINF:-1 tvg-id="dsports - D SPORTS +" tvg-name="dsports - D SPORTS +" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr_ybe7yeyqYflqnQ1P7vhC0yQ73qbou0xVKQHha0HTdwMDhfL9kWyTjKn&s=10" group-title="Sports",dsports - D SPORTS +
+#EXTINF:-1 tvg-id="Fubosports - Fubo 3" tvg-name="Fubosports - Fubo 3" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU9WjWWMe41X3SoG6InEZGvrXq7Sb6MRoQGIOA6n_FBlEpXnQr1R0N0h8&s=10" group-title="Sports",Fubosports - Fubo 3
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"83f81c4cc1443991543de4e22eea7586","k":"ddfd7ca653d6f35543d8edb3c688e20f"}]}
-https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/ud6bnhthpj/out/v1/2639a2f4480f4269953de466d5f46463/cenc.mpd
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"fa5e8db5359fc7d1f15207d5de2a3ac4","k":"78a6c0a41972dfdba2145ae0ad4bd681"}]}
+https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/y3mtc7phj2/out/v1/a48ab8dfd51c4d1f9a08774b3cd4c49e/cenc.mpd
 #EXTINF:-1 tvg-id="adsports - Premium 2 - AQ" tvg-name="adsports - Premium 2 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSApVH4gksdUpgOeGjdmC3iWYKgb4pAO6CfyQ&usqp=CAU" group-title="Sports",adsports - Premium 2 - AQ
 #KODIPROP:inputstream=inputstream.ffmpeg
 #KODIPROP:inputstream.adaptive.manifest_type=hls
@@ -677,12 +671,6 @@ https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"e78769d87a41e15036a4fb8bfdf1371e","k":"37be0375dc9fe544c3c6de6a105f7c0a"}]}
 https://admn-live-cdn-lb.starzplayarabia.com/out/v1/admn_tv/abudhabi_sports_1/abudhabi_sports_1_dash_enc/index.mpd
-#EXTINF:-1 tvg-id="Fubosports - Fubo 3" tvg-name="Fubosports - Fubo 3" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU9WjWWMe41X3SoG6InEZGvrXq7Sb6MRoQGIOA6n_FBlEpXnQr1R0N0h8&s=10" group-title="Sports",Fubosports - Fubo 3
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"fa5e8db5359fc7d1f15207d5de2a3ac4","k":"78a6c0a41972dfdba2145ae0ad4bd681"}]}
-https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/y3mtc7phj2/out/v1/a48ab8dfd51c4d1f9a08774b3cd4c49e/cenc.mpd
 #EXTINF:-1 tvg-id="jojsports - JOJ Sports 2 - AQ" tvg-name="jojsports - JOJ Sports 2 - AQ" tvg-logo="https://images.squarespace-cdn.com/content/v1/5a5faffbd0e628cec8bf019f/1516680988569-ELEY4WG7YUCDYA42EU19/JOJ+tv.png" group-title="Sports",jojsports - JOJ Sports 2 - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
@@ -695,6 +683,18 @@ https://dash3.antik.sk/stream/nvidia_joj_sport_2/playlist_cbcs.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"https","k":"//drm.antik.sk/widevine/key*widevine"}]}
 https://dash3.antik.sk/stream/nvidia_joj_sport/playlist_cbcs.mpd
+#EXTINF:-1 tvg-id="spotv - SPOTV 2 - AQ" tvg-name="spotv - SPOTV 2 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcAvS_KXw1DaXbDM7VZHVhL95gfuIbDNk1Ww&usqp=CAU" group-title="Sports",spotv - SPOTV 2 - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"7eea72d6075245a99ee3255603d58853","k":"6848ef60575579bf4d415db1032153ed"}]}
+https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_spotv2hd.mpd
+#EXTINF:-1 tvg-id="spotv - SPOTV 1 - AQ" tvg-name="spotv - SPOTV 1 - AQ" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcAvS_KXw1DaXbDM7VZHVhL95gfuIbDNk1Ww&usqp=CAU" group-title="Sports",spotv - SPOTV 1 - AQ
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key={"keys":[{"kty":"oct","kid":"ec7ee27d83764e4b845c48cca31c8eef","k":"9c0e4191203fccb0fde34ee29999129e"}]}
+https://qp-pldt-live-grp-11-prod.akamaized.net/out/u/dr_spotvhd.mpd
 #EXTINF:-1 tvg-id="Tap Sport - AQ" tvg-name="Tap Sport - AQ" tvg-logo="https://absatellite.com/wp-content/uploads/2021/10/tap-logo.jpg" group-title="Sports",Tap Sport - AQ
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=mpd
